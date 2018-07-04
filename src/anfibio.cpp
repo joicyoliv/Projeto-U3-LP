@@ -1,5 +1,28 @@
+/**
+* @file 	anfibio.cpp
+* @brief    Arquivo de corpo contendo as implementações dos membros de anfibio
+* @author   Joicy Oliveira  (joiicyoliv@gmail.com)
+* @author   William Correia (will.correia.lima@gmail.com)
+* @since    04/07/2018
+* @date     04/07/2018
+*/
+
 #include "anfibio.h"
 
+/**
+* @brief Construtor paramatrizado
+* @param _id Id do anfibio
+* @param _classe Classe do anfibio
+* @param _cientifico Cientifico do anfibio
+* @param _sexo Sexo do anfibio
+* @param _tamanho Samanho do anfibio
+* @param _dieta Dieta do anfibio
+* @param _vet Veterinario do anfibio
+* @param _trat Tratador do anfibio
+* @param _batismo Batismo do anfibio
+* @param _total_mudas Total de mudas do anfibio
+* @param _ultima_muda Ultima muda do anfibio
+*/
 Anfibio::Anfibio(int _id, string _classe, string _cientifico, char _sexo, float _tamanho,
 		string _dieta, share_ptr<PetFera::Veterinario> _vet, share_ptr<PetFera::Tratador> _trat,
 		string _batismo, int _total_mudas, string _ultima_muda){
@@ -17,23 +40,44 @@ Anfibio::Anfibio(int _id, string _classe, string _cientifico, char _sexo, float 
 	ultima_muda = _ultima_muda;
 }
 
+/**
+* @brief Destrutor padrão
+*/
 Anfibio::~Anfibio(){}
 
+/**
+* @brief	 Método que extrai o total de mudas do anfibio
+* @return 	 total de mudas do anfibio
+*/
 int 
 Anfibio::get_Total_mudas(){
 	return total_mudas;
 }
 
+/**
+* @brief	Altera o total de mudas do anfibio
+* @param	_total_mudas Total de mudas do anfibio
+* @return 	Não retorna valor
+*/
 void 
 Anfibio::set_Total_mudas(int _total_mudas){
 	total_mudas = _total_mudas;
 }
 
+/**
+* @brief	 Método que extrai o ultima de muda do anfibio
+* @return 	 ultima muda do anfibio
+*/
 string 
 Anfibio::get_Ultima_muda(){
 	return ultima_muda;
 }
 
+/**
+* @brief	Altera a ultima muda do anfibio
+* @param	_ultima_muda Ultima muda do anfibio
+* @return 	Não retorna valor
+*/
 void 
 Anfibio::set_Ultima_muda(string _ultima_muda){
 	ultima_muda = _ultima_muda;
