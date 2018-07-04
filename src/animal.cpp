@@ -81,6 +81,32 @@ Animal::set_Classe(string _classe){
 	classe = _classe;
 }
 
+
+
+/**
+	* @brief	 Método que extrai o nome do animal
+	* @return 	 nome do animal
+	*/
+string Animal::get_Nome(){
+	return this->nome;
+}
+
+
+/**
+	* @brief	Altera o Nome do animal
+	* @param	_nome Nome do Animal
+	* @return 	Não retorna valor
+	*/
+
+	void set_Nome( string _nome){
+		this->nome = _nome;
+	}
+
+
+
+
+
+
 /**
 * @brief	 Método que extrai o nome cientifico do animal
 * @return 	 nome cientifico do animal
@@ -210,4 +236,18 @@ Animal::get_Batismo(){
 void 
 Animal::set_Batismo(string _batismo){
 	batismo = _batismo;
+}
+
+
+bool Animal::operator==( Animal const &t){
+	if( this->id == t.get_Id(),
+	this->classe == t.get_Classe(),
+	this->nome == t.get_Nome(),
+	this->cientifico == t.get_Cientifico(),
+	this->sexo == t.get_Sexo(),
+	this->tamanho == t.get_Tamanho(),
+	this->dieta == t.get_Dieta(),
+	this->veterinario == t.get_Veterinario(),
+	this->tratador == t.get_Tratador(),
+	this->batismo == t.get_Batismo())
 }

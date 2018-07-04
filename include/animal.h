@@ -55,7 +55,7 @@ public:
 	void set_Id(int _id);
 
 	/**
-	* @brief	 Método que extrai o classe do animal
+	* @brief	 Método que extrai a classe do animal
 	* @return 	 classe do animal
 	*/
 	string get_Classe();
@@ -66,6 +66,22 @@ public:
 	* @return 	Não retorna valor
 	*/	
 	void set_Classe(string _classe);
+
+
+	/**
+	* @brief	 Método que extrai o nome do animal
+	* @return 	 nome do animal
+	*/
+
+	string get_Nome();
+
+	/**
+	* @brief	Altera o Nome do animal
+	* @param	_nome Nome do Animal
+	* @return 	Não retorna valor
+	*/
+
+	void set_Nome( string _nome);
 
 	/**
 	* @brief	 Método que extrai o nome cientifico do animal
@@ -156,6 +172,7 @@ public:
 	*/
 	void set_Batismo(string _batismo);
 
+	bool operator==( Animal const &t);
 
 protected:
 	int id;
