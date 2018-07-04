@@ -11,12 +11,15 @@
 #define _ANIMAL_H_
 
 #include <string>
+#include <memory>
+#include "veterinario.h"
+#include "tratador.h"
 using namespace std;
 
 /**
 * @brief Classe Animal
 */
-class Animal
+class Animal : public Veterinario, public Tratador
 {
 public:
 
@@ -33,9 +36,13 @@ public:
 	* @param _batismo Batismo do animal
 	*/
 	Animal(int _id, string _classe, string _cientifico, char _sexo, float _tamanho,
-		string _dieta, share_ptr<PetFera::Veterinario> _vet, share_ptr<PetFera::Tratador> _trat,
+		string _dieta, shared_ptr<Veterinario> _vet, shared_ptr<Tratador> _trat,
 		string _batismo);
 	
+
+	Animal(const Animal &f);
+	Animal();
+
 	/**
 	* @brief Destrutor padrão
 	*/
@@ -139,25 +146,25 @@ public:
 	* @brief	 
 	* @return 	 
 	*/
-	share_ptr<PetFera::Veterinario> get_Veterinario();
+	shared_ptr<Veterinario> get_Veterinario();
 
 	/**
 	* @brief	 
 	* @return 	 
 	*/
-	void set_Veterinario(share_ptr<PetFera::Veterinario> _vet);
+	void set_Veterinario(shared_ptr<Veterinario> _vet);
 
 	/**
 	* @brief	 
 	* @return 	 
 	*/
-	share_ptr<PetFera::Tratador> get_Tratador();
+	shared_ptr<Tratador> get_Tratador();
 
 	/**
 	* @brief	 
 	* @return 	 
 	*/
-	void set_Tratador(share_ptr<PetFera::Tratador> _trat);
+	void set_Tratador(shared_ptr<Tratador> _trat);
 
 	/**
 	* @brief	 Método que extrai o nome de batismo do animal
@@ -182,8 +189,8 @@ protected:
 	char sexo;
 	float tamanho;
 	string dieta;
-	share_ptr<PetFera::Veterinario> veterinario;
-	share_ptr<PetFera::Tratador> tratador;
+	shared_ptr<Veterinario> veterinario;
+	shared_ptr<Tratador> tratador;
 	string batismo;
 	
 };

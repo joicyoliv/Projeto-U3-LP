@@ -33,6 +33,10 @@ public:
 	Funcionario(int _id, string _nome, string _cpf, short _idade, short _tipo_sanguineo, 
 		char _fatorRH, string _especialidade);
 
+	Funcionario( const Funcionario &);
+
+	Funcionario();
+
 	/**
 	* @brief Destrutor padrão
 	*/

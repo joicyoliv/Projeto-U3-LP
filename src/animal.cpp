@@ -24,7 +24,7 @@
 * @param _batismo Batismo do animal
 */
 Animal::Animal(int _id, string _classe, string _cientifico, char _sexo, float _tamanho,
-		string _dieta, share_ptr<PetFera::Veterinario> _vet, share_ptr<PetFera::Tratador> _trat,
+		string _dieta, shared_ptr<Veterinario> _vet, shared_ptr<Tratador> _trat,
 		string _batismo){
 
 		id = _id;
@@ -36,6 +36,24 @@ Animal::Animal(int _id, string _classe, string _cientifico, char _sexo, float _t
 		veterinario = _vet;
 		tratador = _trat;
 		batismo = _batismo;
+}
+
+Animal::Animal(const Animal &f){
+
+		this->id = f.id;
+		this->classe = f.classe;
+		this->cientifico = f.cientifico;
+		this->sexo = f.sexo;
+		this->tamanho = f.tamanho;
+		this->dieta = f.dieta;      
+		this->veterinario = f.veterinario;
+		this->tratador = f.tratador;
+		this->batismo = f.batismo;
+
+}
+
+Animal::Animal(){
+
 }
 
 /**
@@ -98,7 +116,7 @@ string Animal::get_Nome(){
 	* @return 	Não retorna valor
 	*/
 
-	void set_Nome( string _nome){
+	void Animal::set_Nome( string _nome){
 		this->nome = _nome;
 	}
 
@@ -187,7 +205,7 @@ Animal::set_Dieta(string _dieta){
 * @brief	 
 * @return 	 
 */
-share_ptr<PetFera::Veterinario> 
+shared_ptr<Veterinario> 
 Animal::get_Veterinario(){
 	return veterinario;
 }
@@ -197,7 +215,7 @@ Animal::get_Veterinario(){
 * @return 	 
 */	
 void 
-Animal::set_Veterinario(share_ptr<PetFera::Veterinario> _vet){
+Animal::set_Veterinario(shared_ptr<Veterinario> _vet){
 	veterinario = _vet;
 }
 
@@ -205,7 +223,7 @@ Animal::set_Veterinario(share_ptr<PetFera::Veterinario> _vet){
 * @brief	 
 * @return 	 
 */
-share_ptr<PetFera::Tratador> 
+shared_ptr<Tratador> 
 Animal::get_Tratador(){
 	return tratador;
 }
@@ -215,7 +233,7 @@ Animal::get_Tratador(){
 * @return 	 
 */
 void 
-Animal::set_Tratador(share_ptr<PetFera::Tratador> _trat){
+Animal::set_Tratador(shared_ptr<Tratador> _trat){
 	tratador = _trat;
 }
 
@@ -240,14 +258,17 @@ Animal::set_Batismo(string _batismo){
 
 
 bool Animal::operator==( Animal const &t){
-	if( this->id == t.get_Id(),
-	this->classe == t.get_Classe(),
-	this->nome == t.get_Nome(),
-	this->cientifico == t.get_Cientifico(),
-	this->sexo == t.get_Sexo(),
-	this->tamanho == t.get_Tamanho(),
-	this->dieta == t.get_Dieta(),
-	this->veterinario == t.get_Veterinario(),
-	this->tratador == t.get_Tratador(),
-	this->batismo == t.get_Batismo())
+	if( this->id == t.id and
+	this->classe == t.classe and
+	this->nome == t.nome and
+	this->cientifico == t.cientifico and
+	this->sexo == t.sexo and
+	this->tamanho == t.tamanho and
+	this->dieta == t.dieta and
+	//this->veterinario == t.veterinario and
+	//this->tratador == t.tratador and
+	this->batismo == t.batismo){
+		return true;
+	}
+	return false;
 }

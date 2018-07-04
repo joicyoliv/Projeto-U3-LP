@@ -19,8 +19,8 @@
 * @param _fatorRH Fator RH do veterinario
 * @param _especialidade Especialidade do veterinario
 */
-Veterinario::Veterinario(int _id, string _nome, string _cpf, short _idade, short _tipo_sanguineo, 
-		char _fatorRH, string _especialidade){
+Veterinario::Veterinario(int _id, string _nome, string _cpf, short _idade, short _tipo_sanguineo, char _fatorRH, 
+	string _especialidade){
 
 	id = _id;
 	nome = _nome;
@@ -29,6 +29,21 @@ Veterinario::Veterinario(int _id, string _nome, string _cpf, short _idade, short
 	tipo_sanguineo = _tipo_sanguineo;
 	fatorRH = _fatorRH;
 	especialidade = _especialidade;
+}
+
+
+Veterinario::Veterinario(const Veterinario &f){
+	this->id = f.id;
+	this->nome = f.nome;
+	this->cpf = f.cpf;
+	this->idade = f.idade;
+	this->tipo_sanguineo = f.tipo_sanguineo;
+	this->fatorRH = f.fatorRH;
+	this->especialidade = f.especialidade;
+}
+
+Veterinario::Veterinario(){
+
 }
 
 /**

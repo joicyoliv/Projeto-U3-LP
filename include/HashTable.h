@@ -54,6 +54,8 @@ public:
     bool put(const K key, const V value);
     
     bool remove(const K key);
+
+    bool Vender(const V key);
     
     int getSize();
     
@@ -260,6 +262,46 @@ bool HashTable<K,V>::remove(const K key)
         }
         //Se a chave for diferente de deletada e igual a chave existente na tabela, remove chave e valor
         else if (entry != ENTRY_DELETED && key == entry->getKey())
+        {
+            delete this->data[index];
+            this->data[index] = ENTRY_DELETED;
+            --this->quantity;
+            return true;
+        }
+    }
+
+    return false;
+}
+
+
+template <class K, class V>
+bool HashTable<K,V>::Vender(const V key)
+{
+    if(this->isEmpty())
+    {
+        return false;
+    }
+    else if( this->getAlpha() <= MIN_ALPHA )
+    {
+        this->reduce();
+    }
+    
+    // implement here}
+    auto base = this->hash(key);
+
+    for (auto d = 0; d < this->getSize(); ++d)
+    {
+        auto index = (base+d) % this->getSize();
+
+        auto entry = this->data[index];
+        
+        //Se a chave for igual a nula, não é possivél fazer remoção, pois a chave não existe na tabela
+        if (entry == nullptr)
+        {
+            return false;
+        }
+        //Se a chave for diferente de deletada e igual a chave existente na tabela, remove chave e valor
+        else if (entry != ENTRY_DELETED && key == entry->getValue())
         {
             delete this->data[index];
             this->data[index] = ENTRY_DELETED;

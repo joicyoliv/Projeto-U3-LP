@@ -32,6 +32,20 @@ Funcionario::Funcionario(int _id, string _nome, string _cpf, short _idade, short
 	especialidade = _especialidade;
 }
 
+Funcionario::Funcionario( const Funcionario &f){
+
+	this->id = f.id;
+	this->nome = f.nome;
+	this->cpf = f.cpf;
+	this->idade = f.idade;
+	this->tipo_sanguineo = f.tipo_sanguineo;
+	this->fatorRH = f.fatorRH;
+	this->especialidade = f.especialidade;
+}
+Funcionario::Funcionario( ){
+	
+}
+
 /**
 * @brief Destrutor padrão
 */
