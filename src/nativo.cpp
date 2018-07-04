@@ -22,6 +22,12 @@ Nativo::Nativo(string _ibama, string _uf_origem, string _autorizacao){
 	autorizacao = _autorizacao;
 }
 	
+Nativo::Nativo(const Nativo &f){
+	this->ibama = f.ibama;
+	this->uf_origem = f.uf_origem;
+	this->autorizacao = f.autorizacao;
+}
+Nativo::Nativo(){}
 Nativo::~Nativo(){}
 
 /**

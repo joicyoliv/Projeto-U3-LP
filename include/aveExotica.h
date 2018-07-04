@@ -16,7 +16,7 @@
 /**
 * @brief Classe AveExotica, derivada Exotico
 */
-class AveExotica: public Exotico
+class AveExotica: public Exotico, public Ave
 {
 public:
 
@@ -36,7 +36,7 @@ public:
 	* @param _pais_origem Pais de origem da ave exotica
 	*/
 	AveExotica(int _id, string _classe, string _cientifico, char _sexo, float _tamanho,
-		string _dieta, share_ptr<PetFera::Veterinario> _vet, share_ptr<PetFera::Tratador> _trat,
+		string _dieta, shared_ptr<Veterinario> _vet, shared_ptr<Tratador> _trat,
 		string _batismo, int _tamanho_bico, int _envergadura,string _ibama, string _pais_origem);
 	
 	/**

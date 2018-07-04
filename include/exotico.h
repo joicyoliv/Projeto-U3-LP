@@ -26,6 +26,8 @@ public:
 	*/
 	Exotico(string _ibama, string _pais_origem);
 
+	Exotico(const Exotico &f);
+	Exotico();
 	/**
 	* @brief Destrutor padrão
 	*/

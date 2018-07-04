@@ -27,6 +27,9 @@ public:
 	*/
 	Nativo(string _ibama, string _uf_origem, string _autorizacao);
 	
+	Nativo(const Nativo &f);
+	Nativo();
+
 	/**
 	* @brief Destrutor padrão
 	*/

@@ -24,7 +24,7 @@
 * @param _cor_pelo Cor do pelo do mamifero
 */
 Mamifero::Mamifero(int _id, string _classe, string _cientifico, char _sexo, float _tamanho,
-		string _dieta, share_ptr<PetFera::Veterinario> _vet, share_ptr<PetFera::Tratador> _trat,
+		string _dieta, shared_ptr<Veterinario> _vet, shared_ptr<Tratador> _trat,
 		string _batismo, string _cor_pelo){
 
 		id = _id;

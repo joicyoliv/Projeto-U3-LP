@@ -33,7 +33,7 @@ public:
 	* @param _tipo_veneno Tipo de veneno do reptil
 	*/
 	Reptil(int _id, string _classe, string _cientifico, char _sexo, float _tamanho,
-		string _dieta, share_ptr<PetFera::Veterinario> _vet, share_ptr<PetFera::Tratador> _trat,
+		string _dieta, shared_ptr<Veterinario> _vet, shared_ptr<Tratador> _trat,
 		string _batismo, bool _venenoso, string _tipo_veneno);
 
 	/**

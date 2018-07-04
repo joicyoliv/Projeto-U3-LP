@@ -9,6 +9,12 @@
 
 #include "animalSilvestre.h"
 
+AnimalSilvestre::AnimalSilvestre(const AnimalSilvestre &f){
+	this->ibama = f.ibama;
+}
+
+AnimalSilvestre::AnimalSilvestre(){}
+
 /**
 * @brief Construtor paramatrizado
 * @param _ibama Ibama

@@ -24,7 +24,7 @@
 * @param _envergadura Envergadura do ave
 */
 Ave::Ave(int _id, string _classe, string _cientifico, char _sexo, float _tamanho,
-		string _dieta, share_ptr<PetFera::Veterinario> _vet, share_ptr<PetFera::Tratador> _trat,
+		string _dieta, shared_ptr<Veterinario> _vet, shared_ptr<Tratador> _trat,
 		string _batismo, int _tamanho_bico, int _envergadura){
 
 	id = _id;
@@ -39,6 +39,22 @@ Ave::Ave(int _id, string _classe, string _cientifico, char _sexo, float _tamanho
 	tamanho_bico = _tamanho_bico;
 	envergadura = _envergadura;
 }
+
+Ave::Ave(const Ave &f){
+	this->id = f.id;
+	this->classe = f.classe;
+	this->cientifico = f.cientifico;
+	this->sexo = f.sexo;
+	this->tamanho = f.tamanho;
+	this->dieta = f.dieta;      
+	this->veterinario = f.vet;
+	this->tratador = f.trat;
+	this->batismo = f.batismo;
+	this->tamanho_bico = f.tamanho_bico;
+	this->envergadura = f.envergadura;
+}
+
+Ave::Ave(){}
 
 /**
 * @brief Destrutor padrão

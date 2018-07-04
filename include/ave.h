@@ -33,9 +33,11 @@ public:
 	* @param _envergadura Envergadura do ave
 	*/
 	Ave(int _id, string _classe, string _cientifico, char _sexo, float _tamanho,
-		string _dieta, share_ptr<PetFera::Veterinario> _vet, share_ptr<PetFera::Tratador> _trat,
+		string _dieta, shared_ptr<Veterinario> _vet, shared_ptr<Tratador> _trat,
 		string _batismo, int _tamanho_bico, int _envergadura);
 
+	Ave(const Ave &f);
+	Ave();
 	/**
 	* @brief Destrutor padrão
 	*/

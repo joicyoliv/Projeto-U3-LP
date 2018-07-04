@@ -24,7 +24,7 @@
 * @param _ultima_muda Ultima muda do anfibio
 */
 Anfibio::Anfibio(int _id, string _classe, string _cientifico, char _sexo, float _tamanho,
-		string _dieta, share_ptr<PetFera::Veterinario> _vet, share_ptr<PetFera::Tratador> _trat,
+		string _dieta, shared_ptr<Veterinario> _vet, shared_ptr<Tratador> _trat,
 		string _batismo, int _total_mudas, string _ultima_muda){
 
 	id = _id;
@@ -40,6 +40,20 @@ Anfibio::Anfibio(int _id, string _classe, string _cientifico, char _sexo, float 
 	ultima_muda = _ultima_muda;
 }
 
+// Anfibio::Anfibio(const Anfibio &f){
+// 	this->id = f.id;
+// 	this->classe = f.classe;
+// 	this->cientifico = f.cientifico;
+// 	this->sexo = f.sexo;
+// 	this->tamanho = f.tamanho;
+// 	this->dieta = f.dieta;      
+// 	this->veterinario = f.vet;
+// 	this->tratador = f.trat;
+// 	this->batismo = f.batismo;
+// 	this->total_mudas = f.total_mudas;
+// 	this->ultima_muda = f.ultima_muda;
+// }
+// Anfibio::Anfibio(){}
 /**
 * @brief Destrutor padrão
 */
