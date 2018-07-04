@@ -2,9 +2,11 @@
 #define _ANIMAL_H_
 
 #include <string>
+#include "veterinario.h"
+#include "tratador.h"
 using namespace std;
 
-class Animal
+class Animal : protected Veterinario , protected Tratador
 {
 public:
 	Animal(int _id, string _classe, string _cientifico, char _sexo, float _tamanho,
@@ -40,6 +42,8 @@ public:
 	string get_Batismo();
 	void set_Batismo(string _batismo);
 
+	void animalpuro() = 0;
+
 
 protected:
 	int id;
@@ -49,8 +53,8 @@ protected:
 	char sexo;
 	float tamanho;
 	string dieta;
-	share_ptr<PetFera::Veterinario> veterinario;
-	share_ptr<PetFera::Tratador> tratador;
+	share_ptr<PetFera::Veterinario> veterinario
+	share_ptr<PetFera::Tratador> tratador
 	string batismo;
 	
 };

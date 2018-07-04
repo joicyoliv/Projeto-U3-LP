@@ -4,7 +4,7 @@
 #include "exotico.h"
 #include "ave.h"
 
-class AveNativa: public Nativo
+class AveNativa: public Nativo , public Ave
 {
 public:
 	AveNativa(int _id, string _classe, string _cientifico, char _sexo, float _tamanho,

@@ -33,6 +33,7 @@ public:
 	string get_Especialidade();
 	void set_Especialidade(string _especialidade);
 
+	void funcionariopuro() = 0;
 
 
 protected:

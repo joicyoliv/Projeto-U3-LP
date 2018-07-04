@@ -10,6 +10,8 @@ public:
 	
 	~Tratador();
 	
+	
+	static int Quantidade_Tratador;
 };
 
 #endif
