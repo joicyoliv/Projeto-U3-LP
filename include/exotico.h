@@ -3,7 +3,7 @@
 
 #include "animalSilvestre.h"
 
-class Exotico: public animalSilvestre
+class Exotico: public AnimalSilvestre
 {
 public:
 	Exotico(string _ibama, string _pais_origem);

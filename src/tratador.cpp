@@ -1,5 +1,7 @@
 #include "tratador.h"
 
+Tratador::Quantidade_Tratador = 0;
+
 Tratador::Tratador(int _id, string _nome, string _cpf, short _idade, short _tipo_sanguineo, 
 		char _fatorRH, string _especialidade){
 

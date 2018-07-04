@@ -4,7 +4,7 @@
 #include "exotico.h"
 #include "ave.h"
 
-class AveExotica: public Exotico
+class AveExotica: public Exotico, public Ave
 {
 public:
 	AveExotica(int _id, string _classe, string _cientifico, char _sexo, float _tamanho,
