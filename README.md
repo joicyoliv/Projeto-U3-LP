@@ -1,6 +1,7 @@
 # Cadastro de Animais de um Pet Shop
 
-# O objetivo deste trabalho é implementar um programa de cadastro de animais para a loja de animais silvestres Pet Fera.
+## O objetivo deste trabalho é implementar um programa de cadastro de 
+animais para a loja de animais silvestres Pet Fera.
 
 ### Aluna: Joicy Daliane Silva Oliveira (joiicyoliv@gmail.com)
 ### Aluno: William Correia (will.correia.lima@gmail.com) 
