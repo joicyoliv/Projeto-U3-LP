@@ -47,8 +47,8 @@ Ave::Ave(const Ave &f){
 	this->sexo = f.sexo;
 	this->tamanho = f.tamanho;
 	this->dieta = f.dieta;      
-	this->veterinario = f.vet;
-	this->tratador = f.trat;
+	this->veterinario = f.veterinario;
+	this->tratador = f.tratador;
 	this->batismo = f.batismo;
 	this->tamanho_bico = f.tamanho_bico;
 	this->envergadura = f.envergadura;

@@ -10,13 +10,13 @@
 #ifndef _AVE_NATIVA_H_
 #define _AVE_NATIVA_H_
 
-#include "exotico.h"
+#include "nativo.h"
 #include "ave.h"
 
 /**
 * @brief Classe AveNativa, derivada Nativo
 */
-class AveNativa: public Nativo, public Ave
+class AveNativa : public Nativo , public Ave
 {
 public:
 

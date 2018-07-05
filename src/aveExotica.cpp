@@ -39,7 +39,7 @@ AveExotica::AveExotica(int _id, string _classe, string _cientifico, char _sexo, 
 	this->batismo = _batismo;
 	this->tamanho_bico = _tamanho_bico;
 	this->envergadura = _envergadura;
-	this->ibama = _ibama;
+	ibama = _ibama;
 	this->pais_origem = _pais_origem;
 
 }

@@ -9,15 +9,14 @@
 
 #ifndef _EXOTICO_H_
 #define _EXOTICO_H_
-
 #include "animalSilvestre.h"
 
 /**
 * @brief Classe Exotica, derivada animalSilvestre
 */
-class Exotico: public animalSilvestre
+class Exotico : public AnimalSilvestre
 {
-public:
+	public:
 
 	/**
 	* @brief Construtor paramatrizado

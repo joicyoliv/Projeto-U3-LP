@@ -35,7 +35,7 @@ public:
 	* @param _trat Tratador do animal
 	* @param _batismo Batismo do animal
 	*/
-	Animal(int _id, string _classe, string _cientifico, char _sexo, float _tamanho,
+	Animal(int _id, string _nome, string _cientifico, char _sexo, float _tamanho,
 		string _dieta, shared_ptr<Veterinario> _vet, shared_ptr<Tratador> _trat,
 		string _batismo);
 	
@@ -180,6 +180,8 @@ public:
 	void set_Batismo(string _batismo);
 
 	bool operator==( Animal const &t);
+
+	friend std::ostream& operator<<(std::ostream &o, Animal const a);
 
 protected:
 	int id;

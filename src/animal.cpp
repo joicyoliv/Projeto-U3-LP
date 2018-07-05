@@ -10,6 +10,8 @@
 #include "animal.h"
 
 #include <string>
+#include <iostream>
+using namespace std;
 
 /**
 * @brief Construtor paramatrizado
@@ -23,12 +25,13 @@
 * @param _trat Tratador do animal
 * @param _batismo Batismo do animal
 */
-Animal::Animal(int _id, string _classe, string _cientifico, char _sexo, float _tamanho,
+Animal::Animal(int _id, string _nome, string _cientifico, char _sexo, float _tamanho,
 		string _dieta, shared_ptr<Veterinario> _vet, shared_ptr<Tratador> _trat,
 		string _batismo){
 
+
 		id = _id;
-		classe = _classe;
+		nome = _nome;
 		cientifico = _cientifico;
 		sexo = _sexo;
 		tamanho = _tamanho;
@@ -41,7 +44,7 @@ Animal::Animal(int _id, string _classe, string _cientifico, char _sexo, float _t
 Animal::Animal(const Animal &f){
 
 		this->id = f.id;
-		this->classe = f.classe;
+		this->nome = f.nome;
 		this->cientifico = f.cientifico;
 		this->sexo = f.sexo;
 		this->tamanho = f.tamanho;
@@ -271,4 +274,19 @@ bool Animal::operator==( Animal const &t){
 		return true;
 	}
 	return false;
+}
+
+
+
+std::ostream& operator<<(std::ostream &o, Animal const a){
+
+	o<< "ID : " << a.id << endl
+	<< "Classe : " << a.classe << endl
+	<< "nome :" << a.nome  << endl
+	<< "cientifico : " << a.cientifico  << endl
+	<< "sexo : " << a.sexo  << endl
+	<< "tamanho : " << a.tamanho  << endl
+	<< "dieta : "<< a.dieta  << endl
+	<< "batismo : "<< a.batismo << endl;
+	return o; 
 }

@@ -15,7 +15,7 @@
 /**
 * @brief Classe Nativa, derivada AnimalSilvestre
 */
-class Nativo: public AnimalSilvestre
+class Nativo : public AnimalSilvestre
 {
 
 public:

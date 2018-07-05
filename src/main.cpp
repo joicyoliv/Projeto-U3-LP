@@ -10,6 +10,9 @@ int main(){
 	shared_ptr<Tratador> trat = make_shared<Tratador>(1,"joao","0000011",15,1,'a',"Nao fazer nada");
 	Animal teste(1,"cachorro","Cathiorros",'a',2,"Come tudo",vet,trat,"skoasoka");
 
+	cout<< "ta funcionando mesmo?" << endl;
+
+	cout<< "imprimindo o Animal : " << teste;
 
 
 
