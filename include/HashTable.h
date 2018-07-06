@@ -287,7 +287,7 @@ bool HashTable<K,V>::Vender(const V key)
     }
     
     // implement here}
-    auto base = this->hash(key);
+    auto base = this->hash(key->get_Id());
 
     for (auto d = 0; d < this->getSize(); ++d)
     {
