@@ -62,3 +62,19 @@ void
 Mamifero::set_Cor_pelo(string _cor_pelo){
 	cor_pelo = _cor_pelo;
 }
+
+
+void Mamifero::print(ostream &o){
+
+	o<< "ID : " << id << endl
+	<< "Classe : " << classe << endl
+	<< "nome :" << nome  << endl
+	<< "cientifico : " << cientifico  << endl
+	<< "sexo : " << sexo  << endl
+	<< "tamanho : " << tamanho  << endl
+	<< "dieta : "<< dieta  << endl
+	<< "Veterinario : " << veterinario
+	<< "Tratador : " << tratador
+	<< "batismo : "<< batismo << endl
+	<< "cor do pelo : "<< cor_pelo << endl;
+}

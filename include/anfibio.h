@@ -69,6 +69,9 @@ public:
 	* @return 	Não retorna valor
 	*/
 	void set_Ultima_muda(string _ultima_muda);
+
+
+	void print(std::ostream &);
 	
 protected:
 	int total_mudas;

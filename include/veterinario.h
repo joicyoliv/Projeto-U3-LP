@@ -36,6 +36,8 @@ public:
 	* @brief Destrutor padrão
 	*/
 	~Veterinario();
+
+	void print(std::ostream &);
 	
 };
 

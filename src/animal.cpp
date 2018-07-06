@@ -278,15 +278,11 @@ bool Animal::operator==( Animal const &t){
 
 
 
-std::ostream& operator<<(std::ostream &o, Animal const a){
 
-	o<< "ID : " << a.id << endl
-	<< "Classe : " << a.classe << endl
-	<< "nome :" << a.nome  << endl
-	<< "cientifico : " << a.cientifico  << endl
-	<< "sexo : " << a.sexo  << endl
-	<< "tamanho : " << a.tamanho  << endl
-	<< "dieta : "<< a.dieta  << endl
-	<< "batismo : "<< a.batismo << endl;
-	return o; 
-}
+
+
+
+
+
+
+

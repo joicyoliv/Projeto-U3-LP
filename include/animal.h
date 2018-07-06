@@ -12,9 +12,12 @@
 
 #include <string>
 #include <memory>
+#include <iostream>
 #include "veterinario.h"
 #include "tratador.h"
 using namespace std;
+
+
 
 /**
 * @brief Classe Animal
@@ -22,6 +25,7 @@ using namespace std;
 class Animal : public Veterinario, public Tratador
 {
 public:
+
 
 	/**
 	* @brief Construtor paramatrizado
@@ -180,8 +184,9 @@ public:
 	void set_Batismo(string _batismo);
 
 	bool operator==( Animal const &t);
+ 
 
-	friend std::ostream& operator<<(std::ostream &o, Animal const a);
+	virtual void print(ostream &o) = 0;
 
 protected:
 	int id;
@@ -196,6 +201,14 @@ protected:
 	string batismo;
 	
 };
+
+
+
+
+
+
+
+
 
 
 #endif

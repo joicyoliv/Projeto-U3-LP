@@ -48,3 +48,20 @@ AveExotica::AveExotica(int _id, string _classe, string _cientifico, char _sexo, 
 * @brief Destrutor padrão
 */	
 AveExotica::~AveExotica(){}
+
+
+void AveExotica::print(ostream &o){
+
+	o<< "ID : " << id << endl
+	<< "Classe : " << classe << endl
+	<< "nome :" << nome  << endl
+	<< "cientifico : " << cientifico  << endl
+	<< "sexo : " << sexo  << endl
+	<< "tamanho : " << tamanho  << endl
+	<< "dieta : "<< dieta  << endl
+	<< "Veterinario : " << veterinario
+	<< "Tratador : " << tratador
+	<< "batismo : "<< batismo << endl
+	<< "ibama : "<< ibama << endl
+	<< "pais de origem : " << pais_origem << endl;
+}

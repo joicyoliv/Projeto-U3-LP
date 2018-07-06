@@ -68,6 +68,8 @@ public:
 	* @return 	Não retorna valor
 	*/
 	void set_Envergadura(int _envergadura);
+
+	virtual void print(std::ostream &);
 	
 protected:
 	int tamanho_bico;

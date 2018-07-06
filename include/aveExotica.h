@@ -9,7 +9,6 @@
 
 #ifndef _AVE_EXOTICA_H_
 #define _AVE_EXOTICA_H_
-
 #include "exotico.h"
 #include "ave.h"
 
@@ -43,6 +42,8 @@ public:
 	* @brief Destrutor padrão
 	*/
 	~AveExotica();
+
+	void print(std::ostream &);
 	
 };
 

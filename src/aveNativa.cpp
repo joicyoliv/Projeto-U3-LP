@@ -50,3 +50,21 @@ AveNativa::AveNativa(int _id, string _classe, string _cientifico, char _sexo, fl
 * @brief Destrutor padrão
 */	
 AveNativa::~AveNativa(){}
+
+
+void AveNativa::print(ostream &o){
+
+	o<< "ID : " << id << endl
+	<< "Classe : " << classe << endl
+	<< "nome :" << nome  << endl
+	<< "cientifico : " << cientifico  << endl
+	<< "sexo : " << sexo  << endl
+	<< "tamanho : " << tamanho  << endl
+	<< "dieta : "<< dieta  << endl
+	<< "Veterinario : " << veterinario
+	<< "Tratador : " << tratador
+	<< "batismo : "<< batismo << endl
+	<< "ibama : "<< ibama << endl
+	<< "uf de origem : "<< uf_origem << endl
+	<< "autorizacao : "<< autorizacao << endl;
+}

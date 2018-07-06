@@ -98,3 +98,20 @@ void
 Ave::set_Envergadura(int _envergadura){
 	envergadura = _envergadura;
 }
+
+
+void Ave::print(ostream &o){
+
+	o<< "ID : " << id << endl
+	<< "Classe : " << classe << endl
+	<< "nome :" << nome  << endl
+	<< "cientifico : " << cientifico  << endl
+	<< "sexo : " << sexo  << endl
+	<< "tamanho : " << tamanho  << endl
+	<< "dieta : "<< dieta  << endl
+	<< "Veterinario : " << veterinario
+	<< "Tratador : " << tratador
+	<< "batismo : "<< batismo << endl
+	<< "tamanho do bico : "<< tamanho_bico << endl
+	<< "envergadura : " << envergadura << endl;
+}

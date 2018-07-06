@@ -66,6 +66,8 @@ public:
 	* @return 	Não retorna valor
 	*/	
 	void set_Tipo_veneno(string _tipo_veneno);
+
+	void print(std::ostream &);
 	
 protected:
 	bool venenoso;

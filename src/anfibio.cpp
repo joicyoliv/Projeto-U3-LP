@@ -96,3 +96,21 @@ void
 Anfibio::set_Ultima_muda(string _ultima_muda){
 	ultima_muda = _ultima_muda;
 }
+
+
+void Anfibio::print(ostream &o){
+
+	o<< "ID : " << id << endl
+	<< "Classe : " << classe << endl
+	<< "nome :" << nome  << endl
+	<< "cientifico : " << cientifico  << endl
+	<< "sexo : " << sexo  << endl
+	<< "tamanho : " << tamanho  << endl
+	<< "dieta : "<< dieta  << endl
+	<< "Veterinario : " << veterinario
+	<< "Tratador : " << tratador
+	<< "batismo : "<< batismo << endl
+	<< "total_mudas : "<< total_mudas << endl
+	<< "ultima_muda : "<< ultima_muda << endl;
+
+}

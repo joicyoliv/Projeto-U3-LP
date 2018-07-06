@@ -10,6 +10,7 @@
 #ifndef _FUNCIONARIO_H_
 #define _FUNCIONARIO_H_
 
+#include <iostream>
 #include <string>
 using namespace std;
 
@@ -132,6 +133,10 @@ public:
 	* @return 	Não retorna valor
 	*/
 	void set_Especialidade(string _especialidade);
+
+
+
+	virtual void print(std::ostream &)=0;
 
 
 

@@ -46,6 +46,7 @@ public:
 	*/
 	~AveNativa();
 	
+	void print(std::ostream &);
 };
 
 

@@ -37,6 +37,8 @@ public:
 	* @brief Destrutor padrão
 	*/
 	~Tratador();
+
+	void print(std::ostream &);
 	
 };
 

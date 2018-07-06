@@ -50,3 +50,15 @@ Tratador::Tratador(){
 * @brief Destrutor padrão
 */
 Tratador::~Tratador(){}
+
+
+void Tratador::print(std::ostream & o){
+	o<< "ID : " << id << endl
+	<<"Nome : "<<nome << endl
+	<<"CPF : "<< cpf << endl
+	<<"Idade : "<<idade << endl
+	<<"Tipo sanguineo : "<< tipo_sanguineo << endl
+	<<"Fator RH : "<< fatorRH << endl
+	<<"Especialidade : "<< especialidade << endl;
+
+}

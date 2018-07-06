@@ -52,6 +52,8 @@ public:
 	* @return 	Não retorna valor
 	*/	
 	void set_Cor_pelo(string _cor_pelo);
+
+	void print(std::ostream &);
 	
 protected:
 	string cor_pelo;

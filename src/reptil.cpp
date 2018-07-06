@@ -81,3 +81,20 @@ void
 Reptil::set_Tipo_veneno(string _tipo_veneno){
 	tipo_veneno = _tipo_veneno;
 }
+
+
+void Reptil::print(ostream &o){
+
+	o<< "ID : " << id << endl
+	<< "Classe : " << classe << endl
+	<< "nome :" << nome  << endl
+	<< "cientifico : " << cientifico  << endl
+	<< "sexo : " << sexo  << endl
+	<< "tamanho : " << tamanho  << endl
+	<< "dieta : "<< dieta  << endl
+	<< "Veterinario : " << veterinario
+	<< "Tratador : " << tratador
+	<< "batismo : "<< batismo << endl
+	<< "venenoso : "<< venenoso << endl
+	<< "tipo de veneno : "<< tipo_veneno << endl;
+}
