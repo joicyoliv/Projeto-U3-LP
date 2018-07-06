@@ -38,6 +38,7 @@ public:
 	~Veterinario();
 
 	void print(std::ostream &);
+	//void print();
 	
 };
 

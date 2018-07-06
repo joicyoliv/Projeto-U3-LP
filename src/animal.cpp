@@ -26,7 +26,7 @@ using namespace std;
 * @param _batismo Batismo do animal
 */
 Animal::Animal(int _id, string _nome, string _cientifico, char _sexo, float _tamanho,
-		string _dieta, shared_ptr<Veterinario> _vet, shared_ptr<Tratador> _trat,
+		string _dieta, shared_ptr<Veterinario> & _vet, shared_ptr<Tratador> & _trat,
 		string _batismo){
 
 
@@ -275,6 +275,9 @@ bool Animal::operator==( Animal const &t){
 	}
 	return false;
 }
+
+
+
 
 
 

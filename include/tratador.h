@@ -39,6 +39,7 @@ public:
 	~Tratador();
 
 	void print(std::ostream &);
+	//void print();
 	
 };
 

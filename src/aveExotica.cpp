@@ -24,12 +24,13 @@
 * @param _ibama Ibama
 * @param _pais_origem Pais de origem da ave exotica
 */
-AveExotica::AveExotica(int _id, string _classe, string _cientifico, char _sexo, float _tamanho,
+AveExotica::AveExotica(int _id, string _nome, string _cientifico, char _sexo, float _tamanho,
 		string _dieta, shared_ptr<Veterinario> _vet, shared_ptr<Tratador> _trat,
 		string _batismo, int _tamanho_bico, int _envergadura,string _ibama, string _pais_origem){
 
 	this->id = _id;
-	this->classe = _classe;
+	this->classe = "Aves";
+	this->nome = _nome;
 	this->cientifico = _cientifico;
 	this->sexo = _sexo;
 	this->tamanho = _tamanho;
@@ -52,16 +53,36 @@ AveExotica::~AveExotica(){}
 
 void AveExotica::print(ostream &o){
 
-	o<< "ID : " << id << endl
+	o<<"---------------------------------------------------------------------" << endl
+	<< "Ave Exotica : "<< endl 
+	<< "ID : " << id << endl
 	<< "Classe : " << classe << endl
 	<< "nome :" << nome  << endl
 	<< "cientifico : " << cientifico  << endl
 	<< "sexo : " << sexo  << endl
 	<< "tamanho : " << tamanho  << endl
 	<< "dieta : "<< dieta  << endl
-	<< "Veterinario : " << veterinario
-	<< "Tratador : " << tratador
 	<< "batismo : "<< batismo << endl
 	<< "ibama : "<< ibama << endl
-	<< "pais de origem : " << pais_origem << endl;
+	<< "pais de origem : " << pais_origem << endl << endl
+
+	<< "Veterinario : " << endl
+	<<"ID : " << veterinario->get_Id() << endl
+	<<"Nome : "<<veterinario->get_Nome() << endl
+	<<"CPF : "<< veterinario->get_Cpf() << endl
+	<<"Idade : "<<veterinario->get_Idade() << endl
+	<<"Tipo sanguineo : "<< veterinario->get_Tipo_Sanguineo() << endl
+	<<"Fator RH : "<< veterinario->get_FatorRH() << endl
+	<<"Especialidade : "<< veterinario->get_Especialidade() << endl << endl
+
+
+	<< "Tratador " << endl
+	<<"ID : " << tratador->get_Id() << endl
+	<<"Nome : "<<tratador->get_Nome() << endl
+	<<"CPF : "<< tratador->get_Cpf() << endl
+	<<"Idade : "<<tratador->get_Idade() << endl
+	<<"Tipo sanguineo : "<< tratador->get_Tipo_Sanguineo() << endl
+	<<"Fator RH : "<< tratador->get_FatorRH() << endl
+	<<"Especialidade : "<< tratador->get_Especialidade() << endl
+	<<"---------------------------------------------------------------------" << endl;
 }

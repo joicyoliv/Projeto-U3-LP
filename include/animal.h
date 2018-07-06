@@ -7,6 +7,7 @@
 * @date     04/07/2018
 */
 
+
 #ifndef _ANIMAL_H_
 #define _ANIMAL_H_
 
@@ -16,6 +17,9 @@
 #include "veterinario.h"
 #include "tratador.h"
 using namespace std;
+
+
+
 
 
 
@@ -40,7 +44,7 @@ public:
 	* @param _batismo Batismo do animal
 	*/
 	Animal(int _id, string _nome, string _cientifico, char _sexo, float _tamanho,
-		string _dieta, shared_ptr<Veterinario> _vet, shared_ptr<Tratador> _trat,
+		string _dieta, shared_ptr<Veterinario> & _vet, shared_ptr<Tratador> & _trat,
 		string _batismo);
 	
 
@@ -199,8 +203,11 @@ protected:
 	shared_ptr<Veterinario> veterinario;
 	shared_ptr<Tratador> tratador;
 	string batismo;
+
+
 	
 };
+
 
 
 

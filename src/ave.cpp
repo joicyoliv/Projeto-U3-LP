@@ -23,12 +23,13 @@
 * @param _tamanho_bico Envergadura do ave
 * @param _envergadura Envergadura do ave
 */
-Ave::Ave(int _id, string _classe, string _cientifico, char _sexo, float _tamanho,
+Ave::Ave(int _id, string _nome, string _cientifico, char _sexo, float _tamanho,
 		string _dieta, shared_ptr<Veterinario> _vet, shared_ptr<Tratador> _trat,
 		string _batismo, int _tamanho_bico, int _envergadura){
 
 	id = _id;
-	classe = _classe;
+	classe = "Aves";
+	nome = _nome;
 	cientifico = _cientifico;
 	sexo = _sexo;
 	tamanho = _tamanho;
@@ -42,7 +43,8 @@ Ave::Ave(int _id, string _classe, string _cientifico, char _sexo, float _tamanho
 
 Ave::Ave(const Ave &f){
 	this->id = f.id;
-	this->classe = f.classe;
+	this->classe = "Aves";
+	this->nome = f.nome;
 	this->cientifico = f.cientifico;
 	this->sexo = f.sexo;
 	this->tamanho = f.tamanho;
@@ -100,18 +102,3 @@ Ave::set_Envergadura(int _envergadura){
 }
 
 
-void Ave::print(ostream &o){
-
-	o<< "ID : " << id << endl
-	<< "Classe : " << classe << endl
-	<< "nome :" << nome  << endl
-	<< "cientifico : " << cientifico  << endl
-	<< "sexo : " << sexo  << endl
-	<< "tamanho : " << tamanho  << endl
-	<< "dieta : "<< dieta  << endl
-	<< "Veterinario : " << veterinario
-	<< "Tratador : " << tratador
-	<< "batismo : "<< batismo << endl
-	<< "tamanho do bico : "<< tamanho_bico << endl
-	<< "envergadura : " << envergadura << endl;
-}

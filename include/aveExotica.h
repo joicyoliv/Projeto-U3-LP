@@ -34,7 +34,7 @@ public:
 	* @param _ibama Ibama
 	* @param _pais_origem Pais de origem da ave exotica
 	*/
-	AveExotica(int _id, string _classe, string _cientifico, char _sexo, float _tamanho,
+	AveExotica(int _id, string _nome, string _cientifico, char _sexo, float _tamanho,
 		string _dieta, shared_ptr<Veterinario> _vet, shared_ptr<Tratador> _trat,
 		string _batismo, int _tamanho_bico, int _envergadura,string _ibama, string _pais_origem);
 	

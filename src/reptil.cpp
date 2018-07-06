@@ -23,12 +23,13 @@
 * @param _venenoso Venenoso do reptil
 * @param _tipo_veneno Tipo de veneno do reptil
 */
-Reptil::Reptil(int _id, string _classe, string _cientifico, char _sexo, float _tamanho,
+Reptil::Reptil(int _id, string _nome, string _cientifico, char _sexo, float _tamanho,
 		string _dieta, shared_ptr<Veterinario> _vet, shared_ptr<Tratador> _trat,
 		string _batismo, bool _venenoso, string _tipo_veneno){
 
 		id = _id;
-		classe = _classe;
+		classe = "Reptilia";
+		nome = _nome;
 		cientifico = _cientifico;
 		sexo = _sexo;
 		tamanho = _tamanho;
@@ -85,16 +86,36 @@ Reptil::set_Tipo_veneno(string _tipo_veneno){
 
 void Reptil::print(ostream &o){
 
-	o<< "ID : " << id << endl
+	o<<"---------------------------------------------------------------------" << endl
+	<< "Reptil : " << endl
+	<<"ID : " << id << endl
 	<< "Classe : " << classe << endl
 	<< "nome :" << nome  << endl
 	<< "cientifico : " << cientifico  << endl
 	<< "sexo : " << sexo  << endl
 	<< "tamanho : " << tamanho  << endl
 	<< "dieta : "<< dieta  << endl
-	<< "Veterinario : " << veterinario
-	<< "Tratador : " << tratador
 	<< "batismo : "<< batismo << endl
 	<< "venenoso : "<< venenoso << endl
-	<< "tipo de veneno : "<< tipo_veneno << endl;
+	<< "tipo de veneno : "<< tipo_veneno << endl << endl
+
+	<< "Veterinario : " << endl
+	<<"ID : " << veterinario->get_Id() << endl
+	<<"Nome : "<<veterinario->get_Nome() << endl
+	<<"CPF : "<< veterinario->get_Cpf() << endl
+	<<"Idade : "<<veterinario->get_Idade() << endl
+	<<"Tipo sanguineo : "<< veterinario->get_Tipo_Sanguineo() << endl
+	<<"Fator RH : "<< veterinario->get_FatorRH() << endl
+	<<"Especialidade : "<< veterinario->get_Especialidade() << endl << endl
+
+
+	<< "Tratador " << endl
+	<<"ID : " << tratador->get_Id() << endl
+	<<"Nome : "<<tratador->get_Nome() << endl
+	<<"CPF : "<< tratador->get_Cpf() << endl
+	<<"Idade : "<<tratador->get_Idade() << endl
+	<<"Tipo sanguineo : "<< tratador->get_Tipo_Sanguineo() << endl
+	<<"Fator RH : "<< tratador->get_FatorRH() << endl
+	<<"Especialidade : "<< tratador->get_Especialidade() << endl
+	<<"---------------------------------------------------------------------" << endl;
 }

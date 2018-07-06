@@ -185,3 +185,6 @@ Funcionario::set_Especialidade(string _especialidade){
 	especialidade = _especialidade;
 }
 
+
+
+

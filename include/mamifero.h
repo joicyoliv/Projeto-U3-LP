@@ -31,7 +31,7 @@ public:
 	* @param _batismo Batismo do mamifero
 	* @param _cor_pelo Cor do pelo do mamifero
 	*/
-	Mamifero(int _id, string _classe, string _cientifico, char _sexo, float _tamanho,
+	Mamifero(int _id, string _nome, string _cientifico, char _sexo, float _tamanho,
 		string _dieta, shared_ptr<Veterinario> _vet, shared_ptr<Tratador> _trat,
 		string _batismo, string _cor_pelo);
 

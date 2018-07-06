@@ -32,7 +32,7 @@ public:
 	* @param _tamanho_bico Envergadura do ave
 	* @param _envergadura Envergadura do ave
 	*/
-	Ave(int _id, string _classe, string _cientifico, char _sexo, float _tamanho,
+	Ave(int _id, string _nome, string _cientifico, char _sexo, float _tamanho,
 		string _dieta, shared_ptr<Veterinario> _vet, shared_ptr<Tratador> _trat,
 		string _batismo, int _tamanho_bico, int _envergadura);
 
@@ -69,7 +69,7 @@ public:
 	*/
 	void set_Envergadura(int _envergadura);
 
-	virtual void print(std::ostream &);
+	virtual void print(std::ostream &) =0;
 	
 protected:
 	int tamanho_bico;

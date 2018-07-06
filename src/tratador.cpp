@@ -52,7 +52,7 @@ Tratador::Tratador(){
 Tratador::~Tratador(){}
 
 
-void Tratador::print(std::ostream & o){
+void Tratador::print(std::ostream & o ){
 	o<< "ID : " << id << endl
 	<<"Nome : "<<nome << endl
 	<<"CPF : "<< cpf << endl
@@ -62,3 +62,14 @@ void Tratador::print(std::ostream & o){
 	<<"Especialidade : "<< especialidade << endl;
 
 }
+
+
+// void Tratador::print(){
+// 	cout< "ID : " << id << endl
+// 	<<"Nome : "<<nome << endl
+// 	<<"CPF : "<< cpf << endl
+// 	<<"Idade : "<<idade << endl
+// 	<<"Tipo sanguineo : "<< tipo_sanguineo << endl
+// 	<<"Fator RH : "<< fatorRH << endl
+// 	<<"Especialidade : "<< especialidade << endl;
+// }

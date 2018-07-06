@@ -36,7 +36,7 @@ public:
 	* @param _uf_origem Pais de origem da ave nativa
 	* @param _autorizacao Autorizacao
 	*/
-	AveNativa(int _id, string _classe, string _cientifico, char _sexo, float _tamanho,
+	AveNativa(int _id, string _nome, string _cientifico, char _sexo, float _tamanho,
 		string _dieta, shared_ptr<Veterinario> _vet, shared_ptr<Tratador> _trat,
 		string _batismo, int _tamanho_bico, int _envergadura,string _ibama, string _uf_origem, 
 		string _autorizacao);

@@ -33,8 +33,8 @@ public:
 	* @param _total_mudas Total de mudas do anfibio
 	* @param _ultima_muda Ultima muda do anfibio
 	*/
-	Anfibio(int _id, string _classe, string _cientifico, char _sexo, float _tamanho,
-		string _dieta, shared_ptr<Veterinario> _vet, shared_ptr<Tratador> _trat,
+	Anfibio(int _id, string _nome, string _cientifico, char _sexo, float _tamanho,
+		string _dieta, shared_ptr<Veterinario> _vet, shared_ptr<Tratador>  _trat,
 		string _batismo, int _total_mudas, string _ultima_muda);
 
 	// Anfibio(const Anfibio &f);
