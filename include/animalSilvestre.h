@@ -20,9 +20,17 @@ class AnimalSilvestre
 {
 public:
 
+	/**
+	* @brief Construtor cópia de Animal Silvestre
+	* @param AnimalSilvestre
+	*/
 	AnimalSilvestre(const AnimalSilvestre &f);
 
+	/**
+	* @brief Construtor padrão
+	*/
 	AnimalSilvestre();
+
 	/**
 	* @brief Construtor paramatrizado
 	* @param _ibama Ibama

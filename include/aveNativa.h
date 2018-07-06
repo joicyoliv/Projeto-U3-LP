@@ -46,6 +46,9 @@ public:
 	*/
 	~AveNativa();
 	
+	/**
+	* @brief Método para imprimir os dados de Ave Nativa
+	*/
 	void print(std::ostream &);
 };
 

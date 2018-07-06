@@ -53,6 +53,10 @@ public:
 	*/	
 	void set_Cor_pelo(string _cor_pelo);
 
+	/**
+	* @brief	Método para imprimir os dados de animal Mamifero
+	* @return 	Não retorna valor
+	*/	
 	void print(std::ostream &);
 	
 protected:

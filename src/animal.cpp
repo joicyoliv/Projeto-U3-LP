@@ -41,6 +41,9 @@ Animal::Animal(int _id, string _nome, string _cientifico, char _sexo, float _tam
 		batismo = _batismo;
 }
 
+/**
+* @brief Construtor copia de Animal
+*/
 Animal::Animal(const Animal &f){
 
 		this->id = f.id;
@@ -55,6 +58,9 @@ Animal::Animal(const Animal &f){
 
 }
 
+/**
+* @brief Construtor padrão
+*/
 Animal::Animal(){
 
 }
@@ -105,28 +111,22 @@ Animal::set_Classe(string _classe){
 
 
 /**
-	* @brief	 Método que extrai o nome do animal
-	* @return 	 nome do animal
-	*/
+* @brief	 Método que extrai o nome do animal
+* @return 	 nome do animal
+*/
 string Animal::get_Nome(){
 	return this->nome;
 }
 
 
 /**
-	* @brief	Altera o Nome do animal
-	* @param	_nome Nome do Animal
-	* @return 	Não retorna valor
-	*/
-
-	void Animal::set_Nome( string _nome){
-		this->nome = _nome;
-	}
-
-
-
-
-
+* @brief	Altera o Nome do animal
+* @param	_nome Nome do Animal
+* @return 	Não retorna valor
+*/
+void Animal::set_Nome( string _nome){
+	this->nome = _nome;
+}
 
 /**
 * @brief	 Método que extrai o nome cientifico do animal
@@ -259,7 +259,11 @@ Animal::set_Batismo(string _batismo){
 	batismo = _batismo;
 }
 
-
+/**
+* @brief	Método para verificar se os animais são iguais
+* @param	Animal
+* @return 	True para verdadeiro e False para falso
+*/
 bool Animal::operator==( Animal const &t){
 	if( this->id == t.id and
 	this->classe == t.classe and

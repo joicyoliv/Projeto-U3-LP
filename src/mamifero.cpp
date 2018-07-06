@@ -64,7 +64,10 @@ Mamifero::set_Cor_pelo(string _cor_pelo){
 	cor_pelo = _cor_pelo;
 }
 
-
+/**
+* @brief	Método para imprimir os dados de animal Mamifero
+* @return 	Não retorna valor
+*/
 void Mamifero::print(ostream &o){
 
 	o<<"---------------------------------------------------------------------" << endl

@@ -83,7 +83,9 @@ Reptil::set_Tipo_veneno(string _tipo_veneno){
 	tipo_veneno = _tipo_veneno;
 }
 
-
+/**
+* @brief	 Método que imprimi os dados de um Reptil
+*/
 void Reptil::print(ostream &o){
 
 	o<<"---------------------------------------------------------------------" << endl

@@ -36,8 +36,18 @@ public:
 		string _dieta, shared_ptr<Veterinario> _vet, shared_ptr<Tratador> _trat,
 		string _batismo, int _tamanho_bico, int _envergadura);
 
+	/**
+	* @brief Construtor cópia de Ave
+	* @param Ave
+	*/
 	Ave(const Ave &f);
+
+	/**
+	* @brief Construtor padrão
+	* @param Ave
+	*/
 	Ave();
+
 	/**
 	* @brief Destrutor padrão
 	*/
@@ -69,6 +79,9 @@ public:
 	*/
 	void set_Envergadura(int _envergadura);
 
+	/**
+	* @brief Método virtual puro
+	*/
 	virtual void print(std::ostream &) =0;
 	
 protected:

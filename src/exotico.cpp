@@ -19,14 +19,22 @@ Exotico::Exotico(string _ibama, string _pais_origem){
 	pais_origem = _pais_origem;
 }
 
+/**
+* @brief Construtor cópia de animal exotico
+* @param _Exotico
+*/
 Exotico::Exotico(const Exotico &f){
 	this->ibama = f.ibama;
 	this->pais_origem = f.pais_origem;
 }
 
+/**
+* @brief Construtor padrão
+*/
 Exotico::Exotico(){
 
 }
+
 /**
 * @brief Destrutor padrão
 */

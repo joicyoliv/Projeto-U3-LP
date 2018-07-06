@@ -36,8 +36,15 @@ public:
 	Funcionario(int _id, string _nome, string _cpf, short _idade, short _tipo_sanguineo, 
 		char _fatorRH, string _especialidade);
 
+	/**
+	* @brief Construtor cópia de Funcionario
+	* @param Funcionario
+	*/
 	Funcionario( const Funcionario &);
 
+	/**
+	* @brief Construtor padrão
+	*/
 	Funcionario();
 
 	/**
@@ -137,7 +144,9 @@ public:
 	void set_Especialidade(string _especialidade);
 
 
-
+	/**
+	* @brief Métoro virtual puro
+	*/
 	virtual void print(std::ostream &)=0;
 
 

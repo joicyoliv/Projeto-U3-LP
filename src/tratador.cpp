@@ -31,6 +31,10 @@ Tratador::Tratador(int _id, string _nome, string _cpf, short _idade, short _tipo
 	especialidade = _especialidade;
 }
 
+/**
+* @brief	 Construtor cópia de Tratador
+* @param Tratador
+*/
 Tratador::Tratador(const Tratador &f){
 	this->id = f.id;
 	this->nome = f.nome;
@@ -42,6 +46,10 @@ Tratador::Tratador(const Tratador &f){
 
 }
 
+
+/**
+* @brief	 Construtor padrão
+*/
 Tratador::Tratador(){
 
 }
@@ -52,6 +60,9 @@ Tratador::Tratador(){
 Tratador::~Tratador(){}
 
 
+/**
+* @brief	 Método que imprimi os dados de um Tratador
+*/
 void Tratador::print(std::ostream & o ){
 	o<< "ID : " << id << endl
 	<<"Nome : "<<nome << endl
@@ -63,13 +74,3 @@ void Tratador::print(std::ostream & o ){
 
 }
 
-
-// void Tratador::print(){
-// 	cout< "ID : " << id << endl
-// 	<<"Nome : "<<nome << endl
-// 	<<"CPF : "<< cpf << endl
-// 	<<"Idade : "<<idade << endl
-// 	<<"Tipo sanguineo : "<< tipo_sanguineo << endl
-// 	<<"Fator RH : "<< fatorRH << endl
-// 	<<"Especialidade : "<< especialidade << endl;
-// }

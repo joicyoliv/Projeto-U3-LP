@@ -50,7 +50,9 @@ AveExotica::AveExotica(int _id, string _nome, string _cientifico, char _sexo, fl
 */	
 AveExotica::~AveExotica(){}
 
-
+/**
+* @brief Método para imprimir os dados de Ave Exotica
+*/
 void AveExotica::print(ostream &o){
 
 	o<<"---------------------------------------------------------------------" << endl
