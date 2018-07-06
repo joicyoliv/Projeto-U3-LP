@@ -30,7 +30,17 @@ public:
 	*/
 	Tratador(int _id, string _nome, string _cpf, short _idade, short _tipo_sanguineo, 
 		char _fatorRH, string _especialidade);
+	
+
+	/**
+	* @brief	 Construtor cópia de Tratador
+	* @param Tratador
+	*/
 	Tratador(const Tratador &f);
+	
+	/**
+	* @brief	 Construtor padrão
+	*/
 	Tratador();
 	
 	/**
@@ -38,8 +48,11 @@ public:
 	*/
 	~Tratador();
 
+	/**
+	* @brief	 Método que imprimi os dados de um TRatador
+	*/
 	void print(std::ostream &);
-	//void print();
+	
 	
 };
 

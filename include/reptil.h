@@ -67,6 +67,9 @@ public:
 	*/	
 	void set_Tipo_veneno(string _tipo_veneno);
 
+	/**
+	* @brief	 Método que imprimi os dados de um Reptil
+	*/
 	void print(std::ostream &);
 	
 protected:

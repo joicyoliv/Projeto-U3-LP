@@ -43,6 +43,9 @@ public:
 	*/
 	~AveExotica();
 
+	/**
+	* @brief Método para imprimir os dados de Ave Exotica
+	*/
 	void print(std::ostream &);
 	
 };

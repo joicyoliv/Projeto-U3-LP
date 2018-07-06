@@ -25,8 +25,17 @@ class Exotico : public AnimalSilvestre
 	*/
 	Exotico(string _ibama, string _pais_origem);
 
+	/**
+	* @brief Construtor cópia de animal exotico
+	* @param _Exotico
+	*/
 	Exotico(const Exotico &f);
+
+	/**
+	* @brief Construtor padrão
+	*/
 	Exotico();
+	
 	/**
 	* @brief Destrutor padrão
 	*/

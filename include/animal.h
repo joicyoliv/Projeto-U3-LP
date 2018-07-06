@@ -18,18 +18,12 @@
 #include "tratador.h"
 using namespace std;
 
-
-
-
-
-
 /**
 * @brief Classe Animal
 */
 class Animal : public Veterinario, public Tratador
 {
 public:
-
 
 	/**
 	* @brief Construtor paramatrizado
@@ -47,8 +41,14 @@ public:
 		string _dieta, shared_ptr<Veterinario> & _vet, shared_ptr<Tratador> & _trat,
 		string _batismo);
 	
-
+	/**
+	* @brief Construtor copia de Animal
+	*/
 	Animal(const Animal &f);
+
+	/**
+	* @brief Construtor padrão
+	*/
 	Animal();
 
 	/**
@@ -187,9 +187,17 @@ public:
 	*/
 	void set_Batismo(string _batismo);
 
+	/**
+	* @brief	Método para verificar se os animais são iguais
+	* @param	Animal
+	* @return 	True para verdadeiro e False para falso
+	*/
 	bool operator==( Animal const &t);
- 
-
+ 	
+	/**
+	* @brief	Método virtual puro
+	* @return 	Não retorna valor
+	*/
 	virtual void print(ostream &o) = 0;
 
 protected:

@@ -52,7 +52,9 @@ AveNativa::AveNativa(int _id, string _nome, string _cientifico, char _sexo, floa
 */	
 AveNativa::~AveNativa(){}
 
-
+/**
+* @brief Método para imprimir os dados de Ave Nativa
+*/
 void AveNativa::print(ostream &o){
 
 	o<<"---------------------------------------------------------------------" << endl

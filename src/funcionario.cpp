@@ -32,6 +32,10 @@ Funcionario::Funcionario(int _id, string _nome, string _cpf, short _idade, short
 	especialidade = _especialidade;
 }
 
+/**
+* @brief Construtor cópia de Funcionario
+* @param Funcionario
+*/
 Funcionario::Funcionario( const Funcionario &f){
 
 	this->id = f.id;
@@ -42,9 +46,11 @@ Funcionario::Funcionario( const Funcionario &f){
 	this->fatorRH = f.fatorRH;
 	this->especialidade = f.especialidade;
 }
-Funcionario::Funcionario( ){
-	
-}
+
+/**
+* @brief Construtor padrão
+*/
+Funcionario::Funcionario( ){}
 
 /**
 * @brief Destrutor padrão

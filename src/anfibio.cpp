@@ -10,7 +10,6 @@
 #include "anfibio.h"
 
 
-
 /**
 * @brief Construtor paramatrizado
 * @param _id Id do anfibio
@@ -43,20 +42,6 @@ Anfibio::Anfibio(int _id, string _nome, string _cientifico, char _sexo, float _t
 	ultima_muda = _ultima_muda;
 }
 
-// Anfibio::Anfibio(const Anfibio &f){
-// 	this->id = f.id;
-// 	this->classe = f.classe;
-// 	this->cientifico = f.cientifico;
-// 	this->sexo = f.sexo;
-// 	this->tamanho = f.tamanho;
-// 	this->dieta = f.dieta;      
-// 	this->veterinario = f.vet;
-// 	this->tratador = f.trat;
-// 	this->batismo = f.batismo;
-// 	this->total_mudas = f.total_mudas;
-// 	this->ultima_muda = f.ultima_muda;
-// }
-// Anfibio::Anfibio(){}
 /**
 * @brief Destrutor padrão
 */
@@ -101,9 +86,10 @@ Anfibio::set_Ultima_muda(string _ultima_muda){
 }
 
 
-
-
-
+/**
+* @brief	Método para imprimir dados de anfibio
+* @return 	Não retorna valor
+*/
 void Anfibio::print(ostream &o){
 
 	o<<"---------------------------------------------------------------------" << endl
@@ -138,8 +124,6 @@ void Anfibio::print(ostream &o){
 	<<"Fator RH : "<< tratador->get_FatorRH() << endl
 	<<"Especialidade : "<< tratador->get_Especialidade() << endl
 	<<"---------------------------------------------------------------------"<<endl;
-
-	
 
 }
 

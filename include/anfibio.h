@@ -37,8 +37,6 @@ public:
 		string _dieta, shared_ptr<Veterinario> _vet, shared_ptr<Tratador>  _trat,
 		string _batismo, int _total_mudas, string _ultima_muda);
 
-	// Anfibio(const Anfibio &f);
-	// Anfibio();
 	/**
 	* @brief Destrutor padrão
 	*/
@@ -70,7 +68,10 @@ public:
 	*/
 	void set_Ultima_muda(string _ultima_muda);
 
-
+	/**
+	* @brief	Método para imprimir dados de anfibio
+	* @return 	Não retorna valor
+	*/
 	void print(std::ostream &);
 	
 protected:

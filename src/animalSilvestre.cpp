@@ -9,10 +9,17 @@
 
 #include "animalSilvestre.h"
 
+/**
+* @brief Construtor cópia de Animal Silvestre
+* @param AnimalSilvestre
+*/
 AnimalSilvestre::AnimalSilvestre(const AnimalSilvestre &f){
 	this->ibama = f.ibama;
 }
 
+/**
+* @brief Construtor padrão
+*/
 AnimalSilvestre::AnimalSilvestre(){}
 
 /**

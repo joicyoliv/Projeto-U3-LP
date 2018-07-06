@@ -41,6 +41,10 @@ Ave::Ave(int _id, string _nome, string _cientifico, char _sexo, float _tamanho,
 	envergadura = _envergadura;
 }
 
+/**
+* @brief Construtor cópia de Ave
+* @param Ave
+*/
 Ave::Ave(const Ave &f){
 	this->id = f.id;
 	this->classe = "Aves";
@@ -56,6 +60,10 @@ Ave::Ave(const Ave &f){
 	this->envergadura = f.envergadura;
 }
 
+/**
+* @brief Construtor padrão
+* @param Ave
+*/
 Ave::Ave(){}
 
 /**

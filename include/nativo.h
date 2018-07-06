@@ -27,7 +27,15 @@ public:
 	*/
 	Nativo(string _ibama, string _uf_origem, string _autorizacao);
 	
+	/**
+	* @brief Construtor cópia de Animal Nativo
+	* @param Nativo
+	*/
 	Nativo(const Nativo &f);
+
+	/**
+	* @brief Construtor padrão
+	*/
 	Nativo();
 
 	/**

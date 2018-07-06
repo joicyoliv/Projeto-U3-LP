@@ -21,13 +21,25 @@ Nativo::Nativo(string _ibama, string _uf_origem, string _autorizacao){
 	uf_origem = _uf_origem;
 	autorizacao = _autorizacao;
 }
-	
+
+/**
+* @brief Construtor cópia de Animal Nativo
+* @param Nativo
+*/	
 Nativo::Nativo(const Nativo &f){
 	this->ibama = f.ibama;
 	this->uf_origem = f.uf_origem;
 	this->autorizacao = f.autorizacao;
 }
+
+/**
+* @brief Construtor padrão
+*/
 Nativo::Nativo(){}
+
+/**
+* @brief Destrutor padrão
+*/
 Nativo::~Nativo(){}
 
 /**

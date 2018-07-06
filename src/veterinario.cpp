@@ -31,7 +31,10 @@ Veterinario::Veterinario(int _id, string _nome, string _cpf, short _idade, short
 	especialidade = _especialidade;
 }
 
-
+/**
+* @brief	 Construtor cópia de Veterinario
+* @param Veterinario
+*/
 Veterinario::Veterinario(const Veterinario &f){
 	this->id = f.id;
 	this->nome = f.nome;
@@ -42,6 +45,9 @@ Veterinario::Veterinario(const Veterinario &f){
 	this->especialidade = f.especialidade;
 }
 
+/**
+* @brief	 Construtor padrão
+*/
 Veterinario::Veterinario(){
 
 }
@@ -52,8 +58,9 @@ Veterinario::Veterinario(){
 Veterinario::~Veterinario(){}
 
 
-
-
+/**
+* @brief	 Método que imprimi os dados de um Veterinario
+*/
 void Veterinario::print(std::ostream & o ){
 	o<< "ID : " << id << 	endl
 	<<"Nome : "<<nome << endl
@@ -65,13 +72,3 @@ void Veterinario::print(std::ostream & o ){
 
 }
 
-
-// void Veterinario::print(){
-// 	cout< "ID : " << id << endl
-// 	<<"Nome : "<<nome << endl
-// 	<<"CPF : "<< cpf << endl
-// 	<<"Idade : "<<idade << endl
-// 	<<"Tipo sanguineo : "<< tipo_sanguineo << endl
-// 	<<"Fator RH : "<< fatorRH << endl
-// 	<<"Especialidade : "<< especialidade << endl;
-// }
