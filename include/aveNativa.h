@@ -50,6 +50,13 @@ public:
 	* @brief Método para imprimir os dados de Ave Nativa
 	*/
 	void print(std::ostream &);
+
+	/**
+	* @brief	Método para verificar se os AveNativa são iguais
+	* @param	AveNativa
+	* @return 	True para verdadeiro e False para falso
+	*/
+	bool operator==( AveNativa const &t);
 };
 
 

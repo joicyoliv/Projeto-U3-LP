@@ -102,3 +102,26 @@ void Mamifero::print(ostream &o){
 	<<"Especialidade : "<< tratador->get_Especialidade() << endl
 	<<"---------------------------------------------------------------------" << endl;
 }
+
+
+/**
+* @brief	Método para verificar se os mamifero são iguais
+* @param	Mamifero
+* @return 	True para verdadeiro e False para falso
+*/
+bool Mamifero::operator==( Mamifero const &t){
+	if( this->id == t.id and
+	this->classe == t.classe and
+	this->nome == t.nome and
+	this->cientifico == t.cientifico and
+	this->sexo == t.sexo and
+	this->tamanho == t.tamanho and
+	this->dieta == t.dieta and
+	//this->veterinario == t.veterinario and
+	//this->tratador == t.tratador and
+	this->batismo == t.batismo and
+	this->cor_pelo == t.cor_pelo){
+		return true;
+	}
+	return false;
+}

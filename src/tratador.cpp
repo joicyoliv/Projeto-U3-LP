@@ -74,3 +74,20 @@ void Tratador::print(std::ostream & o ){
 
 }
 
+/**
+* @brief	Método para verificar se os Tratador são iguais
+* @param	Tratador
+* @return 	True para verdadeiro e False para falso
+*/
+bool Tratador::operator==( Tratador const &t){
+	if( this->id == t.id and
+	this->nome == t.nome and
+	this->cpf == t.cpf and
+	this->idade == t.idade and
+	this->tipo_sanguineo == t.tipo_sanguineo and
+	this->fatorRH == t.fatorRH and
+	this->especialidade == t.especialidade){
+		return true;
+	}
+	return false;
+}

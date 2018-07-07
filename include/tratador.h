@@ -52,6 +52,13 @@ public:
 	* @brief	 Método que imprimi os dados de um TRatador
 	*/
 	void print(std::ostream &);
+
+	/**
+	* @brief	Método para verificar se os Tratador são iguais
+	* @param	Tratador
+	* @return 	True para verdadeiro e False para falso
+	*/
+	bool operator==( Tratador const &t);
 	
 	
 };

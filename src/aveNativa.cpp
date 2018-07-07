@@ -91,3 +91,27 @@ void AveNativa::print(ostream &o){
 	<<"Especialidade : "<< tratador->get_Especialidade() << endl
 	<<"---------------------------------------------------------------------" << endl;
 }
+
+/**
+* @brief	Método para verificar se os AveNativa são iguais
+* @param	AveNativa
+* @return 	True para verdadeiro e False para falso
+*/
+bool AveNativa::operator==( AveNativa const &t){
+	if( this->id == t.id and
+	this->classe == t.classe and
+	this->nome == t.nome and
+	this->cientifico == t.cientifico and
+	this->sexo == t.sexo and
+	this->tamanho == t.tamanho and
+	this->dieta == t.dieta and
+	//this->veterinario == t.veterinario and
+	//this->tratador == t.tratador and
+	this->batismo == t.batismo and
+	this->ibama == t.ibama and
+	this->uf_origem == t.uf_origem and
+	this->autorizacao == t.autorizacao){
+		return true;
+	}
+	return false;
+}

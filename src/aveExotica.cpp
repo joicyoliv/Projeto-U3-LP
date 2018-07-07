@@ -88,3 +88,26 @@ void AveExotica::print(ostream &o){
 	<<"Especialidade : "<< tratador->get_Especialidade() << endl
 	<<"---------------------------------------------------------------------" << endl;
 }
+
+/**
+* @brief	Método para verificar se os AveExotica são iguais
+* @param	AveExotica
+* @return 	True para verdadeiro e False para falso
+*/
+bool AveExotica::operator==( AveExotica const &t){
+	if( this->id == t.id and
+	this->classe == t.classe and
+	this->nome == t.nome and
+	this->cientifico == t.cientifico and
+	this->sexo == t.sexo and
+	this->tamanho == t.tamanho and
+	this->dieta == t.dieta and
+	//this->veterinario == t.veterinario and
+	//this->tratador == t.tratador and
+	this->batismo == t.batismo and
+	this->ibama == t.ibama and
+	this->pais_origem == t.pais_origem){
+		return true;
+	}
+	return false;
+}

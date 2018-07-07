@@ -71,6 +71,13 @@ public:
 	* @brief	 Método que imprimi os dados de um Reptil
 	*/
 	void print(std::ostream &);
+
+	/**
+	* @brief	Método para verificar se os Reptil são iguais
+	* @param	Reptil
+	* @return 	True para verdadeiro e False para falso
+	*/
+	bool operator==( Reptil const &t);
 	
 protected:
 	bool venenoso;

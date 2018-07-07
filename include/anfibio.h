@@ -73,6 +73,13 @@ public:
 	* @return 	Não retorna valor
 	*/
 	void print(std::ostream &);
+
+	/**
+	* @brief	Método para verificar se os anfibios são iguais
+	* @param	Anfibio
+	* @return 	True para verdadeiro e False para falso
+	*/
+	bool operator==( Anfibio const &t);
 	
 protected:
 	int total_mudas;

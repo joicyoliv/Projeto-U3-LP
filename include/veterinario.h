@@ -51,6 +51,13 @@ public:
 	*/
 	void print(std::ostream &);
 
+	/**
+	* @brief	Método para verificar se os veterinarios são iguais
+	* @param	Veterinario
+	* @return 	True para verdadeiro e False para falso
+	*/
+	bool operator==( Veterinario const &t);
+
 	
 };
 

@@ -58,6 +58,13 @@ public:
 	* @return 	Não retorna valor
 	*/	
 	void print(std::ostream &);
+
+	/**
+	* @brief	Método para verificar se os mamiferos são iguais
+	* @param	Mamifero
+	* @return 	True para verdadeiro e False para falso
+	*/
+	bool operator==( Mamifero const &t);
 	
 protected:
 	string cor_pelo;

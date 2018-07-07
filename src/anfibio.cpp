@@ -127,6 +127,30 @@ void Anfibio::print(ostream &o){
 
 }
 
+/**
+* @brief	Método para verificar se os anfibios são iguais
+* @param	Anfibio
+* @return 	True para verdadeiro e False para falso
+*/
+bool Anfibio::operator==( Anfibio const &t){
+	if( this->id == t.id and
+	this->classe == t.classe and
+	this->nome == t.nome and
+	this->cientifico == t.cientifico and
+	this->sexo == t.sexo and
+	this->tamanho == t.tamanho and
+	this->dieta == t.dieta and
+	//this->veterinario == t.veterinario and
+	//this->tratador == t.tratador and
+	this->batismo == t.batismo and
+
+	this->total_mudas == t.total_mudas and
+	this->ultima_muda == t.ultima_muda){
+		return true;
+	}
+	return false;
+}
+
 
 
 
