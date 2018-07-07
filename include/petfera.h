@@ -4,6 +4,7 @@
 #include <vector>
 #include <stdexcept>
 #include <exception>
+#include <stdio_ext.h>
 #include "anfibio.h"
 #include "mamifero.h"
 #include "reptil.h"
@@ -30,8 +31,8 @@ std::ostream& operator<<(O &o, T  &a){
 class PetFera{
 
 	HashTable<int ,shared_ptr<Animal> > animais;
-	std::vector<Veterinario> v;
-	std::vector<Tratador> t;
+	std::vector<shared_ptr<Veterinario>> v;
+	std::vector<shared_ptr<Tratador>> t;
 
 	void menuPrincipal();
 

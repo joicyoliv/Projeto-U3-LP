@@ -324,10 +324,10 @@ unsigned long HashTable<K,V>::preHash(const K key)
    // }catch(exception& e){
        // cout<< "Exception " << e.what();
     //}
-    unsigned long x = 0;
-    for(unsigned int i = 0; i < key.size(); i++)
+    long x = 0;
+    for(int i = 0; i < key; i++)
     {
-        x = x*101 + key.at(i);
+        x = x*101 + key;
     }
     return x;
 }
@@ -439,7 +439,7 @@ void HashTable<K,V>::print()
         }
         else if( entry != nullptr )
         {
-            std::cout << i << ": " << entry->getKey() << ":" << entry->getValue() << std::endl;
+            std::cout << i << ": " << entry->getKey() << " : " << entry->getValue()->get_Batismo() << std::endl;
         }
         else
         {
