@@ -102,8 +102,8 @@ bool AveExotica::operator==( AveExotica const &t){
 	this->sexo == t.sexo and
 	this->tamanho == t.tamanho and
 	this->dieta == t.dieta and
-	//this->veterinario == t.veterinario and
-	//this->tratador == t.tratador and
+	*veterinario == *(t.veterinario) and
+	*tratador == *(t.tratador) and
 	this->batismo == t.batismo and
 	this->ibama == t.ibama and
 	this->pais_origem == t.pais_origem){

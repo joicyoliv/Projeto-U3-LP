@@ -117,8 +117,8 @@ bool Mamifero::operator==( Mamifero const &t){
 	this->sexo == t.sexo and
 	this->tamanho == t.tamanho and
 	this->dieta == t.dieta and
-	//this->veterinario == t.veterinario and
-	//this->tratador == t.tratador and
+	*veterinario == *(t.veterinario) and
+	*tratador == *(t.tratador) and
 	this->batismo == t.batismo and
 	this->cor_pelo == t.cor_pelo){
 		return true;

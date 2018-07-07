@@ -140,8 +140,8 @@ bool Anfibio::operator==( Anfibio const &t){
 	this->sexo == t.sexo and
 	this->tamanho == t.tamanho and
 	this->dieta == t.dieta and
-	//this->veterinario == t.veterinario and
-	//this->tratador == t.tratador and
+	*veterinario == *(t.veterinario) and
+	*tratador == *(t.tratador) and
 	this->batismo == t.batismo and
 
 	this->total_mudas == t.total_mudas and
