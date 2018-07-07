@@ -11,6 +11,7 @@
 #include "aveExotica.h"
 #include "aveNativa.h"
 #include "HashTable.h"
+#include <cassert>
 
 
 
