@@ -39,6 +39,10 @@ class PetFera{
 
 	void menuUm();
 
+	void menuSeis();
+	shared_ptr<Veterinario>& criar_veterinario();
+	shared_ptr<Tratador>& criar_tratador();
+
 
 
 

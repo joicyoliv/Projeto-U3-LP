@@ -41,6 +41,7 @@ public:
 	* @brief Destrutor padrão
 	*/
 	~Anfibio();
+	Anfibio(const Anfibio &f);
 
 	/**
 	* @brief	 Método que extrai o total de mudas do anfibio

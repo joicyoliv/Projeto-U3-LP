@@ -41,6 +41,8 @@ public:
 	*/
 	~Reptil();
 
+	Reptil(const Reptil &f);
+
 	/**
 	* @brief	 Método booleano para verificar se o reptil é venenoso ou não
 	* @return 	 True para venenoso ou False para não venenoso

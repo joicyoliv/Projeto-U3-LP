@@ -39,6 +39,7 @@ public:
 	* @brief Destrutor padrão
 	*/
 	~Mamifero();
+	Mamifero(const Mamifero &f);
 
 	/**
 	* @brief	 Método que extrai a cor do pelo do mamifero

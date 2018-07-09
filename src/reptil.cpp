@@ -41,6 +41,21 @@ Reptil::Reptil(int _id, string _nome, string _cientifico, char _sexo, float _tam
 		tipo_veneno = _tipo_veneno;
 }
 
+
+Reptil::Reptil(const Reptil &f){
+		id = f.id;
+		classe = "Reptilia";
+		nome = f.nome;
+		cientifico = f.cientifico;
+		sexo = f.sexo;
+		tamanho = f.tamanho;
+		dieta = f.dieta;      
+		veterinario = f.veterinario;
+		tratador = f.tratador;
+		batismo = f.batismo;
+		venenoso = f.venenoso;
+		tipo_veneno = f.tipo_veneno;
+}
 /**
 * @brief Destrutor padrão
 */

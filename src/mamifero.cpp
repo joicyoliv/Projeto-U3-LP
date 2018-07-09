@@ -40,6 +40,21 @@ Mamifero::Mamifero(int _id, string _nome, string _cientifico, char _sexo, float 
 		cor_pelo = _cor_pelo;
 }
 
+
+Mamifero::Mamifero(const Mamifero &f){
+		id = f.id;
+		classe = "Mammalia";
+		nome = f.nome;
+		cientifico = f.cientifico;
+		sexo = f.sexo;
+		tamanho = f.tamanho;
+		dieta = f.dieta;      
+		veterinario = f.veterinario;
+		tratador = f.tratador;
+		batismo = f.batismo;
+		cor_pelo = f.cor_pelo;
+}
+
 /**
 * @brief Destrutor padrão
 */
