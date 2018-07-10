@@ -39,6 +39,7 @@ public:
 	* @brief Destrutor padrão
 	*/
 	~Mamifero();
+	Mamifero();
 	Mamifero(const Mamifero &f);
 
 	/**

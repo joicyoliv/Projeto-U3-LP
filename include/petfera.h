@@ -5,9 +5,12 @@
 #include <stdexcept>
 #include <exception>
 #include <stdio_ext.h>
-#include "anfibio.h"
-#include "mamifero.h"
-#include "reptil.h"
+#include "anfibioExotico.h"
+#include "anfibioNativo.h"
+#include "reptilExotico.h"
+#include "reptilNativo.h"
+#include "mamiferoExotico.h"
+#include "mamiferoNativo.h"
 #include "aveExotica.h"
 #include "aveNativa.h"
 #include "HashTable.h"

@@ -40,6 +40,10 @@ Mamifero::Mamifero(int _id, string _nome, string _cientifico, char _sexo, float 
 		cor_pelo = _cor_pelo;
 }
 
+Mamifero::Mamifero(){
+	
+}
+
 
 Mamifero::Mamifero(const Mamifero &f){
 		id = f.id;

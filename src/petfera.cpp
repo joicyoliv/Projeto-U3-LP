@@ -108,7 +108,8 @@ void PetFera::menuUm(){
 					char _sexo;
 					float _tamanho;
 					string _dieta;					
-					string _batismo;					
+					string _batismo;
+					string _ibama;					
 					string _uf_origem;
 					string _autorizacao;
 					string _pais_origem;
@@ -725,12 +726,16 @@ void PetFera::menuSeis(){
 			}else if(i==3){
 
 			}else if(i==4){
-				for(auto indice(0u); indice < v.size() ; ++ indice){
-					cout<< "Veterinario  "<<indice+1 << " : " << endl <<*(v[indice]);
-				}
 				if(v.size()==0){
 					cout<<" Veterinario - vetor vazio" << endl;
+				}else{
+					for(auto indice(0u); indice < v.size() ; ++ indice){
+						cout<<"----------------------------------------"<<endl;
+						cout<< "Veterinario  "<<indice+1 << " : " << endl <<*(v[indice]);
+						cout<<"----------------------------------------"<<endl;
+					}
 				}
+				
 			}else if(i==5){
 				cout<<"Tratador : " << endl;
 					do{
@@ -788,12 +793,16 @@ void PetFera::menuSeis(){
 			}else if(i==6){
 			}else if(i==7){
 			}else if(i==8){
-				for(auto indice(0u); indice < t.size() ; ++ indice){
-					cout<< "Tratador "<<indice+1 << " : " << endl << *(t[indice]);
-				}
 				if(t.size()==0){
 					cout<<" Tratador - vetor vazio" << endl;
+				}else{
+					for(auto indice(0u); indice < t.size() ; ++ indice){
+						cout<<"----------------------------------------"<<endl;
+						cout<< "Tratador "<<indice+1 << " : " << endl << *(t[indice]);
+						cout<<"----------------------------------------"<<endl;
+					}
 				}
+				
 			}
 		
 

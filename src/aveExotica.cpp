@@ -65,6 +65,8 @@ void AveExotica::print(ostream &o){
 	<< "tamanho : " << tamanho  << endl
 	<< "dieta : "<< dieta  << endl
 	<< "batismo : "<< batismo << endl
+	<< "tamanho do bico :"<< tamanho_bico << endl
+	<< "envergadura do bico :" << envergadura << endl
 	<< "ibama : "<< ibama << endl
 	<< "pais de origem : " << pais_origem << endl << endl
 

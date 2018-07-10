@@ -41,6 +41,9 @@ Reptil::Reptil(int _id, string _nome, string _cientifico, char _sexo, float _tam
 		tipo_veneno = _tipo_veneno;
 }
 
+Reptil::Reptil(){
+	
+}
 
 Reptil::Reptil(const Reptil &f){
 		id = f.id;

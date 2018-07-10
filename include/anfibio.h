@@ -41,6 +41,7 @@ public:
 	* @brief Destrutor padrão
 	*/
 	~Anfibio();
+	Anfibio();
 	Anfibio(const Anfibio &f);
 
 	/**

@@ -67,6 +67,8 @@ void AveNativa::print(ostream &o){
 	<< "tamanho : " << tamanho  << endl
 	<< "dieta : "<< dieta  << endl
 	<< "batismo : "<< batismo << endl
+	<< "tamanho do bico :"<< tamanho_bico << endl
+	<< "envergadura do bico :" << envergadura << endl
 	<< "ibama : "<< ibama << endl
 	<< "uf de origem : "<< uf_origem << endl
 	<< "autorizacao : "<< autorizacao << endl<<endl

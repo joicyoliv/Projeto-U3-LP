@@ -16,7 +16,7 @@
 /**
 * @brief Classe ReptilNxotico, derivada Nativo
 */
-class ReptilNxotico : public Nativo , public Reptil
+class ReptilNativo : public Nativo , public Reptil
 {
 public:
 
@@ -36,7 +36,7 @@ public:
 	* @param _uf_origem Pais de origem da ave nativa
 	* @param _autorizacao Autorizacao
 	*/
-	ReptilNxotico(int _id, string _nome, string _cientifico, char _sexo, float _tamanho,
+	ReptilNativo(int _id, string _nome, string _cientifico, char _sexo, float _tamanho,
 		string _dieta, shared_ptr<Veterinario> _vet, shared_ptr<Tratador> _trat,
 		string _batismo,  bool _venenoso, string _tipo_veneno ,string _ibama, string _uf_origem, 
 		string _autorizacao);
@@ -44,7 +44,7 @@ public:
 	/**
 	* @brief Destrutor padrão
 	*/
-	~ReptilNxotico();
+	~ReptilNativo();
 	
 	/**
 	* @brief Método para imprimir os dados de Ave Nativa
@@ -56,7 +56,7 @@ public:
 	* @param	ReptilNxotico
 	* @return 	True para verdadeiro e False para falso
 	*/
-	bool operator==( ReptilNxotico const &t);
+	bool operator==( ReptilNativo const &t);
 };
 
 

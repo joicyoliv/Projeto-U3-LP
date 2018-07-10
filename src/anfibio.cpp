@@ -42,20 +42,24 @@ Anfibio::Anfibio(int _id, string _nome, string _cientifico, char _sexo, float _t
 	ultima_muda = _ultima_muda;
 }
 
+Anfibio::Anfibio(){
+	
+}
+
 Anfibio::Anfibio(const Anfibio &f){
 
-	id = f.id;
-	classe = "Amphibia";
-	nome = f.nome;
-	cientifico = f.cientifico;
-	sexo = f.sexo;
-	tamanho = f.tamanho;
-	dieta = f.dieta;      
-	veterinario = f.veterinario;
-	tratador = f.tratador;
-	batismo = f.batismo;
-	total_mudas = f.total_mudas;
-	ultima_muda = f.ultima_muda;
+	this->id = f.id;
+	this->classe = "Amphibia";
+	this->nome = f.nome;
+	this->cientifico = f.cientifico;
+	this->sexo = f.sexo;
+	this->tamanho = f.tamanho;
+	this->dieta = f.dieta;      
+	this->veterinario = f.veterinario;
+	this->tratador = f.tratador;
+	this->batismo = f.batismo;
+	this->total_mudas = f.total_mudas;
+	this->ultima_muda = f.ultima_muda;
 }
 
 /**

@@ -41,6 +41,8 @@ public:
 	*/
 	~Reptil();
 
+	Reptil();
+
 	Reptil(const Reptil &f);
 
 	/**

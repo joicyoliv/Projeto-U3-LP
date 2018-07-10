@@ -35,8 +35,8 @@ public:
 	* @param _pais_origem Pais de origem da ave exotica
 	*/
 	AnfibioExotico(int _id, string _nome, string _cientifico, char _sexo, float _tamanho,
-		string _dieta, shared_ptr<Veterinario> _vet, shared_ptr<Tratador> _trat,
-		string _batismo, int _total_mudas, string _ultima_muda ,string _ibama, string _pais_origem);
+		string _dieta, shared_ptr<Veterinario>  _vet, shared_ptr<Tratador>  _trat,
+		string _batismo, int _total_mudas, string _ultima_muda , string _ibama, string _pais_origem);
 	
 	/**
 	* @brief Destrutor padrão
