@@ -29,9 +29,9 @@ AnfibioNativo::AnfibioNativo(int _id, string _nome, string _cientifico, char _se
 	/**
 	* @brief Método para imprimir os dados de Ave Nativa
 	*/
-	void AnfibioNativo::print(std::ostream & o){
+	std::ostream& AnfibioNativo::print(std::ostream & o)const{
 
-	o<<"---------------------------------------------------------------------" << endl
+	return o<<"---------------------------------------------------------------------" << endl
 	<< "Anfibio Nativo : "<< endl 
 	<< "ID : " << id << endl
 	<< "Classe : " << classe << endl

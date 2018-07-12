@@ -104,9 +104,9 @@ Reptil::set_Tipo_veneno(string _tipo_veneno){
 /**
 * @brief	 Método que imprimi os dados de um Reptil
 */
-void Reptil::print(ostream &o){
+std::ostream& Reptil::print(ostream &o)const{
 
-	o<<"---------------------------------------------------------------------" << endl
+	return o<<"---------------------------------------------------------------------" << endl
 	<< "Reptil : " << endl
 	<<"ID : " << id << endl
 	<< "Classe : " << classe << endl

@@ -82,7 +82,8 @@ public:
 	/**
 	* @brief Método virtual puro
 	*/
-	virtual void print(std::ostream &) =0;
+	std::ostream& print(std::ostream& os) const
+	{return os;}
 	
 protected:
 	int tamanho_bico;

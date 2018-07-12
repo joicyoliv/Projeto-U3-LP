@@ -110,9 +110,9 @@ Anfibio::set_Ultima_muda(string _ultima_muda){
 * @brief	Método para imprimir dados de anfibio
 * @return 	Não retorna valor
 */
-void Anfibio::print(ostream &o){
+std::ostream& Anfibio::print(ostream &o)const{
 
-	o<<"---------------------------------------------------------------------" << endl
+	return o<<"---------------------------------------------------------------------" << endl
 	<<"Anfibio : " << endl
 	<<"ID : " << id << endl
 	<< "Classe : " << classe << endl

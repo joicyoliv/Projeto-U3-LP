@@ -87,9 +87,9 @@ Mamifero::set_Cor_pelo(string _cor_pelo){
 * @brief	Método para imprimir os dados de animal Mamifero
 * @return 	Não retorna valor
 */
-void Mamifero::print(ostream &o){
+std::ostream& Mamifero::print(ostream &o)const {
 
-	o<<"---------------------------------------------------------------------" << endl
+	return o<<"---------------------------------------------------------------------" << endl
 	<< "Mamifero : "<< endl
 	<<"ID : " << id << endl
 	<< "Classe : " << classe << endl

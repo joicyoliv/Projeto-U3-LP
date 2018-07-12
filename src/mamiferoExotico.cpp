@@ -27,8 +27,8 @@
 	/**
 	* @brief Método para imprimir os dados de Ave Exotica
 	*/
-	void MamiferoExotico::print(std::ostream & o){
-	o<<"---------------------------------------------------------------------" << endl
+	std::ostream& MamiferoExotico::print(std::ostream & o)const{
+	return o<<"---------------------------------------------------------------------" << endl
 	<< "Mamifero Exotico : "<< endl 
 	<< "ID : " << id << endl
 	<< "Classe : " << classe << endl

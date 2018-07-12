@@ -24,12 +24,7 @@
 using namespace std;
 
 
-template < typename O, class T>
-std::ostream& operator<<(O &o, T  &a){
 
-	a.print(o);
-	return o;
-}
 
 
 class PetFera{

@@ -30,8 +30,8 @@
 	/**
 	* @brief Método para imprimir os dados de Ave Nativa
 	*/
-	void ReptilNativo::print(std::ostream & o){
-	o<<"---------------------------------------------------------------------" << endl
+	std::ostream& ReptilNativo::print(std::ostream & o)const{
+	return o<<"---------------------------------------------------------------------" << endl
 	<< "Repitil Nativo : "<< endl 
 	<< "ID : " << id << endl
 	<< "Classe : " << classe << endl

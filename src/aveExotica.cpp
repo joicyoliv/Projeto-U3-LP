@@ -53,9 +53,9 @@ AveExotica::~AveExotica(){}
 /**
 * @brief Método para imprimir os dados de Ave Exotica
 */
-void AveExotica::print(ostream &o){
+std::ostream& AveExotica::print(ostream &o)const{
 
-	o<<"---------------------------------------------------------------------" << endl
+	return o<<"---------------------------------------------------------------------" << endl
 	<< "Ave Exotica : "<< endl 
 	<< "ID : " << id << endl
 	<< "Classe : " << classe << endl

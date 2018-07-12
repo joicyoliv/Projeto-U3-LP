@@ -55,9 +55,9 @@ AveNativa::~AveNativa(){}
 /**
 * @brief Método para imprimir os dados de Ave Nativa
 */
-void AveNativa::print(ostream &o){
+std::ostream& AveNativa::print(ostream &o)const{
 
-	o<<"---------------------------------------------------------------------" << endl
+	return o<<"---------------------------------------------------------------------" << endl
 	<< "Ave Nativa : "<< endl 
 	<<"ID : " << id << endl
 	<< "Classe : " << classe << endl

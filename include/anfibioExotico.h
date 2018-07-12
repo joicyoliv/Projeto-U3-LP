@@ -46,7 +46,7 @@ public:
 	/**
 	* @brief Método para imprimir os dados de Ave Exotica
 	*/
-	void print(std::ostream &);
+	std::ostream& print(std::ostream& os) const;
 
 	/**
 	* @brief	Método para verificar se os Ave Exotica são iguais

@@ -30,8 +30,8 @@ AnfibioExotico::AnfibioExotico(int _id, string _nome, string _cientifico, char _
 	/**
 	* @brief Método para imprimir os dados de Ave Exotica
 	*/
-	void AnfibioExotico::print(std::ostream & o){
-	o<<"---------------------------------------------------------------------" << endl
+	std::ostream& AnfibioExotico::print(std::ostream & o)const{
+	return o<<"---------------------------------------------------------------------" << endl
 	<< "Anfibio Exotico : "<< endl 
 	<< "ID : " << id << endl
 	<< "Classe : " << classe << endl

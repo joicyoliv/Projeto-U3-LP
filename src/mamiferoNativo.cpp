@@ -30,8 +30,8 @@
 	/**
 	* @brief Método para imprimir os dados de Ave Nativa
 	*/
-	void MamiferoNativo::print(std::ostream & o){
-	o<<"---------------------------------------------------------------------" << endl
+	std::ostream& MamiferoNativo::print(std::ostream & o)const{
+	return o<<"---------------------------------------------------------------------" << endl
 	<< "Mamifero Nativo : "<< endl 
 	<< "ID : " << id << endl
 	<< "Classe : " << classe << endl

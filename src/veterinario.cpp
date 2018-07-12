@@ -61,8 +61,8 @@ Veterinario::~Veterinario(){}
 /**
 * @brief	 Método que imprimi os dados de um Veterinario
 */
-void Veterinario::print(std::ostream & o ){
-	o<< "ID : " << id << 	endl
+std::ostream& Veterinario::print(std::ostream & o )const{
+	return o<< "ID : " << id << 	endl
 	<<"Nome : "<<nome << endl
 	<<"CPF : "<< cpf << endl
 	<<"Idade : "<<idade << endl

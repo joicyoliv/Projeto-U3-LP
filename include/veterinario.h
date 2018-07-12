@@ -49,7 +49,7 @@ public:
 	/**
 	* @brief	 Método que imprimi os dados de um Veterinario
 	*/
-	void print(std::ostream &);
+	std::ostream& print(std::ostream& os) const;
 
 	/**
 	* @brief	Método para verificar se os veterinarios são iguais

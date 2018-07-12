@@ -147,7 +147,12 @@ public:
 	/**
 	* @brief Métoro virtual puro
 	*/
-	virtual void print(std::ostream &)=0;
+	
+	virtual std::ostream& print(std::ostream&) const = 0;
+
+	friend std::ostream& operator << (std::ostream& os, const Funcionario& b) {
+		return b.print(os); // o método print será polimórfico
+	}
 
 
 
