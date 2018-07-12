@@ -28,8 +28,7 @@ void PetFera::menu(){
 
 
 void PetFera::menuPrincipal(){
-	bool laco = true;
-	while(laco){
+	
 	cout<<"----------------------------------------"<<endl
 		<<"|                Menu                  |"<<endl
 		<<"| 1- Cadastrar animal                  |"<<endl
@@ -48,6 +47,7 @@ void PetFera::menuPrincipal(){
 			try{
 				getline(cin , entrada);
 				i= stoi(entrada);
+				__fpurge(stdin);
 
 
 			}catch(std::invalid_argument &e){
@@ -75,12 +75,10 @@ void PetFera::menuPrincipal(){
 
 					menuSeis();
 					break;
-			case 7:
-					laco=false;
-					break;
+			
 
-		}
-	}
+		
+			}
 }
 
 
@@ -640,15 +638,19 @@ void PetFera::menuUm(){
 
 void PetFera::menuDois(){
 	cout<< "Em fase de desenvolvimento" << endl;
+	menuPrincipal();
 }
 void PetFera::menuTres(){
 	cout<< "Em fase de desenvolvimento" << endl;
+	menuPrincipal();
 }
 void PetFera::menuQuatro(){
 	cout<< "Em fase de desenvolvimento" << endl;
+	menuPrincipal();
 }
 void PetFera::menuCinco(){
 	cout<< "Em fase de desenvolvimento" << endl;
+	menuPrincipal();
 }
 
 

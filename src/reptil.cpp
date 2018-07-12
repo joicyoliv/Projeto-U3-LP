@@ -104,41 +104,41 @@ Reptil::set_Tipo_veneno(string _tipo_veneno){
 /**
 * @brief	 Método que imprimi os dados de um Reptil
 */
-std::ostream& Reptil::print(ostream &o)const{
+// std::ostream& Reptil::print(ostream &o)const{
 
-	return o<<"---------------------------------------------------------------------" << endl
-	<< "Reptil : " << endl
-	<<"ID : " << id << endl
-	<< "Classe : " << classe << endl
-	<< "nome :" << nome  << endl
-	<< "cientifico : " << cientifico  << endl
-	<< "sexo : " << sexo  << endl
-	<< "tamanho : " << tamanho  << endl
-	<< "dieta : "<< dieta  << endl
-	<< "batismo : "<< batismo << endl
-	<< "venenoso : "<< venenoso << endl
-	<< "tipo de veneno : "<< tipo_veneno << endl << endl
+// 	return o<<"---------------------------------------------------------------------" << endl
+// 	<< "Reptil : " << endl
+// 	<<"ID : " << id << endl
+// 	<< "Classe : " << classe << endl
+// 	<< "nome :" << nome  << endl
+// 	<< "cientifico : " << cientifico  << endl
+// 	<< "sexo : " << sexo  << endl
+// 	<< "tamanho : " << tamanho  << endl
+// 	<< "dieta : "<< dieta  << endl
+// 	<< "batismo : "<< batismo << endl
+// 	<< "venenoso : "<< venenoso << endl
+// 	<< "tipo de veneno : "<< tipo_veneno << endl << endl
 
-	<< "Veterinario : " << endl
-	<<"ID : " << veterinario->get_Id() << endl
-	<<"Nome : "<<veterinario->get_Nome() << endl
-	<<"CPF : "<< veterinario->get_Cpf() << endl
-	<<"Idade : "<<veterinario->get_Idade() << endl
-	<<"Tipo sanguineo : "<< veterinario->get_Tipo_Sanguineo() << endl
-	<<"Fator RH : "<< veterinario->get_FatorRH() << endl
-	<<"Especialidade : "<< veterinario->get_Especialidade() << endl << endl
+// 	<< "Veterinario : " << endl
+// 	<<"ID : " << veterinario->get_Id() << endl
+// 	<<"Nome : "<<veterinario->get_Nome() << endl
+// 	<<"CPF : "<< veterinario->get_Cpf() << endl
+// 	<<"Idade : "<<veterinario->get_Idade() << endl
+// 	<<"Tipo sanguineo : "<< veterinario->get_Tipo_Sanguineo() << endl
+// 	<<"Fator RH : "<< veterinario->get_FatorRH() << endl
+// 	<<"Especialidade : "<< veterinario->get_Especialidade() << endl << endl
 
 
-	<< "Tratador " << endl
-	<<"ID : " << tratador->get_Id() << endl
-	<<"Nome : "<<tratador->get_Nome() << endl
-	<<"CPF : "<< tratador->get_Cpf() << endl
-	<<"Idade : "<<tratador->get_Idade() << endl
-	<<"Tipo sanguineo : "<< tratador->get_Tipo_Sanguineo() << endl
-	<<"Fator RH : "<< tratador->get_FatorRH() << endl
-	<<"Especialidade : "<< tratador->get_Especialidade() << endl
-	<<"---------------------------------------------------------------------" << endl;
-}
+// 	<< "Tratador " << endl
+// 	<<"ID : " << tratador->get_Id() << endl
+// 	<<"Nome : "<<tratador->get_Nome() << endl
+// 	<<"CPF : "<< tratador->get_Cpf() << endl
+// 	<<"Idade : "<<tratador->get_Idade() << endl
+// 	<<"Tipo sanguineo : "<< tratador->get_Tipo_Sanguineo() << endl
+// 	<<"Fator RH : "<< tratador->get_FatorRH() << endl
+// 	<<"Especialidade : "<< tratador->get_Especialidade() << endl
+// 	<<"---------------------------------------------------------------------" << endl;
+// }
 
 /**
 * @brief	Método para verificar se os Reptil são iguais

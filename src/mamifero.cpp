@@ -87,40 +87,40 @@ Mamifero::set_Cor_pelo(string _cor_pelo){
 * @brief	Método para imprimir os dados de animal Mamifero
 * @return 	Não retorna valor
 */
-std::ostream& Mamifero::print(ostream &o)const {
+// std::ostream& Mamifero::print(ostream &o)const {
 
-	return o<<"---------------------------------------------------------------------" << endl
-	<< "Mamifero : "<< endl
-	<<"ID : " << id << endl
-	<< "Classe : " << classe << endl
-	<< "nome :" << nome  << endl
-	<< "cientifico : " << cientifico  << endl
-	<< "sexo : " << sexo  << endl
-	<< "tamanho : " << tamanho  << endl
-	<< "dieta : "<< dieta  << endl
-	<< "batismo : "<< batismo << endl
-	<< "cor do pelo : "<< cor_pelo << endl << endl
+// 	return o<<"---------------------------------------------------------------------" << endl
+// 	<< "Mamifero : "<< endl
+// 	<<"ID : " << id << endl
+// 	<< "Classe : " << classe << endl
+// 	<< "nome :" << nome  << endl
+// 	<< "cientifico : " << cientifico  << endl
+// 	<< "sexo : " << sexo  << endl
+// 	<< "tamanho : " << tamanho  << endl
+// 	<< "dieta : "<< dieta  << endl
+// 	<< "batismo : "<< batismo << endl
+// 	<< "cor do pelo : "<< cor_pelo << endl << endl
 
-	<< "Veterinario : " << endl
-	<<"ID : " << veterinario->get_Id() << endl
-	<<"Nome : "<<veterinario->get_Nome() << endl
-	<<"CPF : "<< veterinario->get_Cpf() << endl
-	<<"Idade : "<<veterinario->get_Idade() << endl
-	<<"Tipo sanguineo : "<< veterinario->get_Tipo_Sanguineo() << endl
-	<<"Fator RH : "<< veterinario->get_FatorRH() << endl
-	<<"Especialidade : "<< veterinario->get_Especialidade() << endl << endl
+// 	<< "Veterinario : " << endl
+// 	<<"ID : " << veterinario->get_Id() << endl
+// 	<<"Nome : "<<veterinario->get_Nome() << endl
+// 	<<"CPF : "<< veterinario->get_Cpf() << endl
+// 	<<"Idade : "<<veterinario->get_Idade() << endl
+// 	<<"Tipo sanguineo : "<< veterinario->get_Tipo_Sanguineo() << endl
+// 	<<"Fator RH : "<< veterinario->get_FatorRH() << endl
+// 	<<"Especialidade : "<< veterinario->get_Especialidade() << endl << endl
 
 
-	<< "Tratador " << endl
-	<<"ID : " << tratador->get_Id() << endl
-	<<"Nome : "<<tratador->get_Nome() << endl
-	<<"CPF : "<< tratador->get_Cpf() << endl
-	<<"Idade : "<<tratador->get_Idade() << endl
-	<<"Tipo sanguineo : "<< tratador->get_Tipo_Sanguineo() << endl
-	<<"Fator RH : "<< tratador->get_FatorRH() << endl
-	<<"Especialidade : "<< tratador->get_Especialidade() << endl
-	<<"---------------------------------------------------------------------" << endl;
-}
+// 	<< "Tratador " << endl
+// 	<<"ID : " << tratador->get_Id() << endl
+// 	<<"Nome : "<<tratador->get_Nome() << endl
+// 	<<"CPF : "<< tratador->get_Cpf() << endl
+// 	<<"Idade : "<<tratador->get_Idade() << endl
+// 	<<"Tipo sanguineo : "<< tratador->get_Tipo_Sanguineo() << endl
+// 	<<"Fator RH : "<< tratador->get_FatorRH() << endl
+// 	<<"Especialidade : "<< tratador->get_Especialidade() << endl
+// 	<<"---------------------------------------------------------------------" << endl;
+// }
 
 
 /**

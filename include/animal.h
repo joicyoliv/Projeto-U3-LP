@@ -198,9 +198,7 @@ public:
 	* @brief	Método virtual puro
 	* @return 	Não retorna valor
 	*/
-	std::ostream& print(std::ostream& os) const{
-		return os;
-	}
+	std::ostream& print(std::ostream& os) const = 0;
 
 protected:
 	int id;

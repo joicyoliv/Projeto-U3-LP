@@ -59,7 +59,7 @@ public:
 	* @brief	Método para imprimir os dados de animal Mamifero
 	* @return 	Não retorna valor
 	*/	
-	std::ostream& print(std::ostream& os) const;
+	std::ostream& print(std::ostream& os) const = 0;
 
 	/**
 	* @brief	Método para verificar se os mamiferos são iguais

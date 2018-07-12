@@ -74,7 +74,7 @@ public:
 	* @brief	Método para imprimir dados de anfibio
 	* @return 	Não retorna valor
 	*/
-	std::ostream& print(std::ostream& os) const;
+	std::ostream& print(std::ostream& os) const = 0;
 
 	/**
 	* @brief	Método para verificar se os anfibios são iguais

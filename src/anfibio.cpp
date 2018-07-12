@@ -110,42 +110,42 @@ Anfibio::set_Ultima_muda(string _ultima_muda){
 * @brief	Método para imprimir dados de anfibio
 * @return 	Não retorna valor
 */
-std::ostream& Anfibio::print(ostream &o)const{
+// std::ostream& Anfibio::print(ostream &o)const{
 
-	return o<<"---------------------------------------------------------------------" << endl
-	<<"Anfibio : " << endl
-	<<"ID : " << id << endl
-	<< "Classe : " << classe << endl
-	<< "nome :" << nome  << endl
-	<< "cientifico : " << cientifico  << endl
-	<< "sexo : " << sexo  << endl
-	<< "tamanho : " << tamanho  << endl
-	<< "dieta : "<< dieta  << endl 
-	<< "batismo : "<< batismo << endl
-	<< "total_mudas : "<< total_mudas << endl
-	<< "ultima_muda : "<< ultima_muda << endl <<endl
+// 	return o<<"---------------------------------------------------------------------" << endl
+// 	<<"Anfibio : " << endl
+// 	<<"ID : " << id << endl
+// 	<< "Classe : " << classe << endl
+// 	<< "nome :" << nome  << endl
+// 	<< "cientifico : " << cientifico  << endl
+// 	<< "sexo : " << sexo  << endl
+// 	<< "tamanho : " << tamanho  << endl
+// 	<< "dieta : "<< dieta  << endl 
+// 	<< "batismo : "<< batismo << endl
+// 	<< "total_mudas : "<< total_mudas << endl
+// 	<< "ultima_muda : "<< ultima_muda << endl <<endl
 
-	<< "Veterinario : " << endl
-	<<"ID : " << veterinario->get_Id() << endl
-	<<"Nome : "<<veterinario->get_Nome() << endl
-	<<"CPF : "<< veterinario->get_Cpf() << endl
-	<<"Idade : "<<veterinario->get_Idade() << endl
-	<<"Tipo sanguineo : "<< veterinario->get_Tipo_Sanguineo() << endl
-	<<"Fator RH : "<< veterinario->get_FatorRH() << endl
-	<<"Especialidade : "<< veterinario->get_Especialidade() << endl << endl
+// 	<< "Veterinario : " << endl
+// 	<<"ID : " << veterinario->get_Id() << endl
+// 	<<"Nome : "<<veterinario->get_Nome() << endl
+// 	<<"CPF : "<< veterinario->get_Cpf() << endl
+// 	<<"Idade : "<<veterinario->get_Idade() << endl
+// 	<<"Tipo sanguineo : "<< veterinario->get_Tipo_Sanguineo() << endl
+// 	<<"Fator RH : "<< veterinario->get_FatorRH() << endl
+// 	<<"Especialidade : "<< veterinario->get_Especialidade() << endl << endl
 
 
-	<< "Tratador " << endl
-	<<"ID : " << tratador->get_Id() << endl
-	<<"Nome : "<<tratador->get_Nome() << endl
-	<<"CPF : "<< tratador->get_Cpf() << endl
-	<<"Idade : "<<tratador->get_Idade() << endl
-	<<"Tipo sanguineo : "<< tratador->get_Tipo_Sanguineo() << endl
-	<<"Fator RH : "<< tratador->get_FatorRH() << endl
-	<<"Especialidade : "<< tratador->get_Especialidade() << endl
-	<<"---------------------------------------------------------------------"<<endl;
+// 	<< "Tratador " << endl
+// 	<<"ID : " << tratador->get_Id() << endl
+// 	<<"Nome : "<<tratador->get_Nome() << endl
+// 	<<"CPF : "<< tratador->get_Cpf() << endl
+// 	<<"Idade : "<<tratador->get_Idade() << endl
+// 	<<"Tipo sanguineo : "<< tratador->get_Tipo_Sanguineo() << endl
+// 	<<"Fator RH : "<< tratador->get_FatorRH() << endl
+// 	<<"Especialidade : "<< tratador->get_Especialidade() << endl
+// 	<<"---------------------------------------------------------------------"<<endl;
 
-}
+// }
 
 /**
 * @brief	Método para verificar se os anfibios são iguais

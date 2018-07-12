@@ -74,7 +74,7 @@ public:
 	/**
 	* @brief	 Método que imprimi os dados de um Reptil
 	*/
-	std::ostream& print(std::ostream& os) const;
+	std::ostream& print(std::ostream& os) const = 0;
 
 	/**
 	* @brief	Método para verificar se os Reptil são iguais
