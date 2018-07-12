@@ -26,7 +26,10 @@ void PetFera::menu(){
 
 
 
+
 void PetFera::menuPrincipal(){
+	bool laco = true;
+	while(laco){
 	cout<<"----------------------------------------"<<endl
 		<<"|                Menu                  |"<<endl
 		<<"| 1- Cadastrar animal                  |"<<endl
@@ -35,6 +38,7 @@ void PetFera::menuPrincipal(){
 		<<"| 4- Consultar animal/classe           |"<<endl
 		<<"| 5- Consultar animal sobre tutela x   |"<<endl
 		<<"| 6- Acoes em Funcionario              |"<<endl
+		<<"| 7- Sair                              |"<<endl
 		<<"----------------------------------------"<<endl;
 
 		int i=0;
@@ -49,25 +53,34 @@ void PetFera::menuPrincipal(){
 			}catch(std::invalid_argument &e){
 				cerr<< "Argumento invalido" <<endl;
 			}
-		}while(i<1 or i >6);
+		}while(i<1 or i >7);
 
 		switch(i){
 			case 1:
 					menuUm();
 					break;
 			case 2:
+					menuDois();
 					break;
 			case 3:
+					menuTres();
 					break;
 			case 4:	
+					menuQuatro();
 					break;
 			case 5:
+					menuCinco();
 					break;
 			case 6:
 
-				menuSeis();
-		}
+					menuSeis();
+					break;
+			case 7:
+					laco=false;
+					break;
 
+		}
+	}
 }
 
 
@@ -625,6 +638,18 @@ void PetFera::menuUm(){
 			menuPrincipal();
 }
 
+void PetFera::menuDois(){
+	cout<< "Em fase de desenvolvimento" << endl;
+}
+void PetFera::menuTres(){
+	cout<< "Em fase de desenvolvimento" << endl;
+}
+void PetFera::menuQuatro(){
+	cout<< "Em fase de desenvolvimento" << endl;
+}
+void PetFera::menuCinco(){
+	cout<< "Em fase de desenvolvimento" << endl;
+}
 
 
 
@@ -722,9 +747,9 @@ void PetFera::menuSeis(){
 					v.push_back(_vet);
 
 			}else if(i==2){
-			 
+			 		cout<< "Em fase de desenvolvimento" << endl;
 			}else if(i==3){
-
+					cout<< "Em fase de desenvolvimento" << endl;
 			}else if(i==4){
 				if(v.size()==0){
 					cout<<" Veterinario - vetor vazio" << endl;
@@ -791,7 +816,9 @@ void PetFera::menuSeis(){
 					t.push_back(_trat);
 
 			}else if(i==6){
+						cout<< "Em fase de desenvolvimento" << endl;
 			}else if(i==7){
+						cout<< "Em fase de desenvolvimento" << endl;
 			}else if(i==8){
 				if(t.size()==0){
 					cout<<" Tratador - vetor vazio" << endl;
